@@ -1,4 +1,4 @@
-. 8306
+. 8320
 de 2368
 je 2239
 est 1812
@@ -584,7 +584,7 @@ chemise 14
 voulons 14
 essayé 14
 hommes 14
-M. 14
+M 14
 Terre 14
 arriver 14
 bébé 14
