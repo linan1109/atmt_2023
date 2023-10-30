@@ -111,7 +111,7 @@ def main(args):
         stats['grad_norm'] = 0
         stats['clip'] = 0
         # Display progress
-        progress_bar = tqdm(train_loader, desc='| Epoch {:03d}'.format(epoch), leave=False, disable=False)
+        progress_bar = tqdm(train_loader, desc='| Epoch {:03d}'.format(epoch), leave=False, disable=True)
 
         # Iterate over the training set
         for i, sample in enumerate(progress_bar):
