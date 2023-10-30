@@ -14,7 +14,10 @@
 			"NODE_VERSION": "none"
 		}
 	},
-
+	"runArgs": [
+		"--gpus",
+		"all"
+	],
 	// Configure tool-specific properties.
 	"customizations": {
 		// Configure properties specific to VS Code.
@@ -55,7 +58,7 @@
 	// "forwardPorts": [],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "pip3 install -e .",
+	// "postCreateCommand": "pip3 install -e .",
 
 	// Comment out to connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
 	"remoteUser": "vscode",
