@@ -4,4 +4,6 @@ __pycache__/
 
 .vscode/
 
-**/__pycache__/
+/__pycache__/
+
+*.old
