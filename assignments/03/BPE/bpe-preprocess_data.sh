@@ -39,6 +39,18 @@ rm $data/preprocessed/train.$src.p
 rm $data/preprocessed/train.$tgt.p
 
 # preprocess all files for model training
-python bpe-preprocess.py --target-lang $tgt --source-lang $src --dest-dir $data/prepared/ --train-prefix $data/preprocessed/train --valid-prefix $data/preprocessed/valid --test-prefix $data/preprocessed/test --tiny-train-prefix $data/preprocessed/tiny_train --threshold-src 1 --threshold-tgt 1 --num-words-src 4000 --num-words-tgt 4000
+python bpe-preprocess.py \
+    --target-lang $tgt \
+    --source-lang $src \
+    --dest-dir $data/prepared/ \
+    --train-prefix $data/preprocessed/train \
+    --valid-prefix $data/preprocessed/valid \
+    --test-prefix $data/preprocessed/test \
+    --tiny-train-prefix $data/preprocessed/tiny_train \
+    --threshold-src 1 \
+    --threshold-tgt 1 \
+    --num-words-src 4000 \
+    --num-words-tgt 4000 \
+    --bpe-dropout 0.2 \
 
 echo "done!"

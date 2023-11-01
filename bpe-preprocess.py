@@ -5,6 +5,7 @@ import os
 import sys
 import re
 import pickle
+import random
 
 # establish link to seq2seq dir
 # scripts_dir = os.path.dirname(os.path.abspath(__file__))
@@ -43,6 +44,8 @@ def get_args():
     parser.add_argument('--vocab-src', default=None, type=str, help='path to dictionary')
     parser.add_argument('--vocab-trg', default=None, type=str, help='path to dictionary')
     parser.add_argument('--quiet', action='store_true', help='no logging')
+    
+    parser.add_argument('--bpe-dropout', default=0.0, type=float, help='BPE dropout')
 
     return parser.parse_args()
 
@@ -78,16 +81,16 @@ def main(args):
     def make_split_datasets(lang, dictionary):
         if args.train_prefix is not None:
             make_binary_dataset(args.train_prefix + '.' + lang, os.path.join(args.dest_dir, 'train.' + lang),
-                                dictionary, merge_dict=os.path.join(args.dest_dir, 'merge.' + lang))
+                                dictionary, merge_dict=os.path.join(args.dest_dir, 'merge.' + lang), bpe_dropout=args.bpe_dropout)
         if args.tiny_train_prefix is not None:
             make_binary_dataset(args.tiny_train_prefix + '.' + lang, os.path.join(args.dest_dir, 'tiny_train.' + lang),
-                                dictionary, merge_dict=os.path.join(args.dest_dir, 'merge.' + lang))
+                                dictionary, merge_dict=os.path.join(args.dest_dir, 'merge.' + lang), bpe_dropout=args.bpe_dropout)
         if args.valid_prefix is not None:
             make_binary_dataset(args.valid_prefix + '.' + lang, os.path.join(args.dest_dir, 'valid.' + lang),
-                                dictionary, merge_dict=os.path.join(args.dest_dir, 'merge.' + lang))
+                                dictionary, merge_dict=os.path.join(args.dest_dir, 'merge.' + lang), bpe_dropout=args.bpe_dropout)
         if args.test_prefix is not None:
             make_binary_dataset(args.test_prefix + '.' + lang, os.path.join(args.dest_dir, 'test.' + lang), 
-                                dictionary, merge_dict=os.path.join(args.dest_dir, 'merge.' + lang))
+                                dictionary, merge_dict=os.path.join(args.dest_dir, 'merge.' + lang), bpe_dropout=args.bpe_dropout)
 
     make_split_datasets(args.source_lang, src_dict)
     make_split_datasets(args.target_lang, tgt_dict)
@@ -163,7 +166,7 @@ def build_dictionary(filenames, vocab_size, merge_dict):
             f.write(f"{pair[0]} {pair[1]} -> {merge}\n")
     return dictionary
 
-def tokenize(text="", merge_dict=None):
+def tokenize(text="", merge_dict=None, dropout=0.0):
     merges = {}
     # load merges
     with open(merge_dict, "r") as f:
@@ -182,6 +185,9 @@ def tokenize(text="", merge_dict=None):
             i = 0
             while i < len(split) - 1:
                 if split[i] == pair[0] and split[i + 1] == pair[1]:
+                    if random.random() < dropout:
+                        i += 1
+                        continue
                     split = split[:i] + [merge] + split[i + 2 :]
                 else:
                     i += 1
@@ -189,7 +195,7 @@ def tokenize(text="", merge_dict=None):
 
     return sum(splits, [])
 
-def make_binary_dataset(input_file, output_file, dictionary, append_eos=True, merge_dict=None):
+def make_binary_dataset(input_file, output_file, dictionary, append_eos=True, merge_dict=None, bpe_dropout=0.0):
     nsent, ntok = 0, 0
     unk_counter = collections.Counter()
 
@@ -200,7 +206,7 @@ def make_binary_dataset(input_file, output_file, dictionary, append_eos=True, me
     tokens_list = []
     with open(input_file, 'r') as inf:
         for line in inf:
-            tokens = dictionary.binarize(line.strip(), tokenize, append_eos, consumer=unk_consumer, merge_dict=merge_dict)
+            tokens = dictionary.binarize(line.strip(), tokenize, append_eos, consumer=unk_consumer, merge_dict=merge_dict, bpe_dropout=bpe_dropout)
             nsent, ntok = nsent + 1, ntok + len(tokens)
             tokens_list.append(tokens.numpy())
 
