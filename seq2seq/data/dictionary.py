@@ -33,8 +33,11 @@ class Dictionary(object):
             self.counts.append(n)
             return idx
 
-    def binarize(self, string, tokenizer, append_eos=True, add_if_not_exist=False, consumer=None):
-        tokens = tokenizer(string)
+    def binarize(self, string, tokenizer, append_eos=True, add_if_not_exist=False, consumer=None, merge_dict=None):
+        if merge_dict is None:
+            tokens = tokenizer(string)
+        else:
+            tokens = tokenizer(text=string, merge_dict=merge_dict)
         ids = torch.IntTensor(len(tokens) + 1 if append_eos else len(tokens))
         for i, token in enumerate(tokens):
             ids[i] = self.add_word(token) if add_if_not_exist else self.index(token)
