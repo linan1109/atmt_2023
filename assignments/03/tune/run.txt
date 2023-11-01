@@ -1,7 +1,0 @@
-./tune--lr.sh >> tune--lr.log 2>&1
-
-./tune--droupout.sh >> tune--droupout.log 2>&1
-
-./tune--batchsize.sh >> tune--batchsize.log 2>&1
-
-./tune--model.sh >> tune--model.log 2>&1

@@ -18,40 +18,22 @@ cd $base
 mkdir -p $data/$tune/
 
 # train model with different learning rates
-for bs in 16 32 64 128
+for bs in 1 8 16 32 64 128
 do 
     mkdir -p $data/$tune/bs_$bs
     python train.py \
-        --cuda \
         --data $data/prepared/ \
         --source-lang $src \
         --target-lang $tgt \
-        --lr 0.003 \
         --batch-size $bs \
-        --max-epoch 10000 \
-        --patience 3 \
-        --save-dir $data/$tune/bs_$bs \
-        --restore-file checkpoint-last.pt \
-        --save-interval 1 \
-        --encoder-embed-dim 64 \
-        --encoder-hidden-size 64 \
-        --encoder-num-layers 1 \
-        --encoder-bidirectional True \
-        --encoder-dropout-in 0.25 \
-        --encoder-dropout-out 0.25 \
-        --decoder-embed-dim 64 \
-        --decoder-hidden-size 128 \
-        --decoder-num-layers 1 \
-        --decoder-dropout-in 0.25 \
-        --decoder-dropout-out 0.25
+        --save-dir $data/$tune/bs_$bs 
 done
 
 echo "train done!"
 
-for bs in 16 32 64 128
+for bs in 1 8 16 32 64 128
 do
     python translate.py \
-        --cuda \
         --data $data/prepared/ \
         --dicts $data/prepared/ \
         --checkpoint-path $data/$tune/bs_$bs/checkpoint_last.pt \
@@ -61,7 +43,7 @@ done
 
 echo "translate done!"
 
-for bs in 16 32 64 128
+for bs in 1 8 16 32 64 128
 do
     bash scripts/postprocess.sh \
         $data/$tune/bs_$bs.$tgt.txt \
