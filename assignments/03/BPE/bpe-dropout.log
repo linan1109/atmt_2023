@@ -1,0 +1,772 @@
+---------------------------------------------
+dropout 0.0
+[2023-11-02 17:26:40] COMMAND: bpe-preprocess.py --target-lang en --source-lang fr --dest-dir /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.0/prepared/ --train-prefix /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.0/preprocessed/train --valid-prefix /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.0/preprocessed/valid --test-prefix /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.0/preprocessed/test --tiny-train-prefix /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.0/preprocessed/tiny_train --threshold-src 1 --threshold-tgt 1 --num-words-src 4000 --num-words-tgt 4000 --bpe-dropout 0.0
+[2023-11-02 17:26:40] Arguments: {'source_lang': 'fr', 'target_lang': 'en', 'train_prefix': '/cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.0/preprocessed/train', 'tiny_train_prefix': '/cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.0/preprocessed/tiny_train', 'valid_prefix': '/cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.0/preprocessed/valid', 'test_prefix': '/cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.0/preprocessed/test', 'dest_dir': '/cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.0/prepared/', 'threshold_src': 1, 'num_words_src': 4000, 'threshold_tgt': 1, 'num_words_tgt': 4000, 'vocab_src': None, 'vocab_trg': None, 'quiet': False, 'bpe_dropout': 0.0}
+[2023-11-02 17:26:40] COMMAND: bpe-preprocess.py --target-lang en --source-lang fr --dest-dir /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.0/prepared/ --train-prefix /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.0/preprocessed/train --valid-prefix /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.0/preprocessed/valid --test-prefix /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.0/preprocessed/test --tiny-train-prefix /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.0/preprocessed/tiny_train --threshold-src 1 --threshold-tgt 1 --num-words-src 4000 --num-words-tgt 4000 --bpe-dropout 0.0
+[2023-11-02 17:26:40] Arguments: {'source_lang': 'fr', 'target_lang': 'en', 'train_prefix': '/cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.0/preprocessed/train', 'tiny_train_prefix': '/cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.0/preprocessed/tiny_train', 'valid_prefix': '/cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.0/preprocessed/valid', 'test_prefix': '/cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.0/preprocessed/test', 'dest_dir': '/cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.0/prepared/', 'threshold_src': 1, 'num_words_src': 4000, 'threshold_tgt': 1, 'num_words_tgt': 4000, 'vocab_src': None, 'vocab_trg': None, 'quiet': False, 'bpe_dropout': 0.0}
+[2023-11-02 17:27:31] Built a source dictionary (fr) with 4000 words
+[2023-11-02 17:28:10] Built a target dictionary (en) with 4000 words
+[2023-11-02 17:29:35] Built a binary dataset for /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.0/preprocessed/train.fr: 10000 sentences, 113661 tokens, 0.003% replaced by unknown token
+[2023-11-02 17:29:44] Built a binary dataset for /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.0/preprocessed/tiny_train.fr: 1000 sentences, 11569 tokens, 0.000% replaced by unknown token
+[2023-11-02 17:29:48] Built a binary dataset for /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.0/preprocessed/valid.fr: 500 sentences, 5745 tokens, 0.000% replaced by unknown token
+[2023-11-02 17:29:52] Built a binary dataset for /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.0/preprocessed/test.fr: 500 sentences, 5802 tokens, 0.017% replaced by unknown token
+[2023-11-02 17:31:09] Built a binary dataset for /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.0/preprocessed/train.en: 10000 sentences, 99801 tokens, 0.003% replaced by unknown token
+[2023-11-02 17:31:17] Built a binary dataset for /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.0/preprocessed/tiny_train.en: 1000 sentences, 10210 tokens, 0.020% replaced by unknown token
+[2023-11-02 17:31:20] Built a binary dataset for /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.0/preprocessed/valid.en: 500 sentences, 5067 tokens, 0.000% replaced by unknown token
+[2023-11-02 17:31:24] Built a binary dataset for /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.0/preprocessed/test.en: 500 sentences, 5147 tokens, 0.039% replaced by unknown token
+preprocess done!
+INFO: Commencing training!
+INFO: COMMAND: train.py --data /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.0/prepared/ --source-lang fr --target-lang en --save-dir /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.0 --lr 0.0005 --batch-size 8 --encoder-num-layers 2 --decoder-num-layers 2 --encoder-dropout-in 0.3 --encoder-dropout-out 0.3 --decoder-dropout-in 0.3 --decoder-dropout-out 0.3
+INFO: Arguments: {'cuda': False, 'data': '/cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.0/prepared/', 'source_lang': 'fr', 'target_lang': 'en', 'max_tokens': None, 'batch_size': 8, 'train_on_tiny': False, 'arch': 'lstm', 'max_epoch': 10000, 'clip_norm': 4.0, 'lr': 0.0005, 'patience': 3, 'log_file': None, 'save_dir': '/cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.0', 'restore_file': 'checkpoint_last.pt', 'save_interval': 1, 'no_save': False, 'epoch_checkpoints': False, 'encoder_num_layers': 2, 'decoder_num_layers': 2, 'encoder_dropout_in': 0.3, 'encoder_dropout_out': 0.3, 'decoder_dropout_in': 0.3, 'decoder_dropout_out': 0.3, 'encoder_embed_dim': 64, 'encoder_embed_path': None, 'encoder_hidden_size': 64, 'encoder_bidirectional': 'True', 'decoder_embed_dim': 64, 'decoder_embed_path': None, 'decoder_hidden_size': 128, 'decoder_use_attention': 'True', 'decoder_use_lexical_model': 'False', 'device_id': 0}
+INFO: Loaded a source dictionary (fr) with 4000 words
+INFO: Loaded a target dictionary (en) with 4000 words
+INFO: Built a model with 1540000 parameters
+INFO: Epoch 000: loss 5.375 | lr 0.0005 | num_tokens 9.98 | batch_size 8 | grad_norm 12.51 | clip 0.9856
+INFO: Epoch 000: valid_loss 5.76 | num_tokens 10.1 | batch_size 500 | valid_perplexity 318
+INFO: Epoch 001: loss 4.707 | lr 0.0005 | num_tokens 9.98 | batch_size 8 | grad_norm 9.893 | clip 1
+INFO: Epoch 001: valid_loss 5.53 | num_tokens 10.1 | batch_size 500 | valid_perplexity 252
+INFO: Epoch 002: loss 4.426 | lr 0.0005 | num_tokens 9.98 | batch_size 8 | grad_norm 10.52 | clip 1
+INFO: Epoch 002: valid_loss 5.09 | num_tokens 10.1 | batch_size 500 | valid_perplexity 163
+INFO: Epoch 003: loss 4.183 | lr 0.0005 | num_tokens 9.98 | batch_size 8 | grad_norm 11.37 | clip 1
+INFO: Epoch 003: valid_loss 4.84 | num_tokens 10.1 | batch_size 500 | valid_perplexity 127
+INFO: Epoch 004: loss 4.012 | lr 0.0005 | num_tokens 9.98 | batch_size 8 | grad_norm 11.91 | clip 1
+INFO: Epoch 004: valid_loss 4.62 | num_tokens 10.1 | batch_size 500 | valid_perplexity 101
+INFO: Epoch 005: loss 3.871 | lr 0.0005 | num_tokens 9.98 | batch_size 8 | grad_norm 12.55 | clip 1
+INFO: Epoch 005: valid_loss 4.45 | num_tokens 10.1 | batch_size 500 | valid_perplexity 85.6
+INFO: Epoch 006: loss 3.746 | lr 0.0005 | num_tokens 9.98 | batch_size 8 | grad_norm 12.86 | clip 1
+INFO: Epoch 006: valid_loss 4.32 | num_tokens 10.1 | batch_size 500 | valid_perplexity 75.6
+INFO: Epoch 007: loss 3.634 | lr 0.0005 | num_tokens 9.98 | batch_size 8 | grad_norm 13.27 | clip 1
+INFO: Epoch 007: valid_loss 4.26 | num_tokens 10.1 | batch_size 500 | valid_perplexity 70.9
+INFO: Epoch 008: loss 3.542 | lr 0.0005 | num_tokens 9.98 | batch_size 8 | grad_norm 13.71 | clip 1
+INFO: Epoch 008: valid_loss 4.18 | num_tokens 10.1 | batch_size 500 | valid_perplexity 65.1
+INFO: Epoch 009: loss 3.455 | lr 0.0005 | num_tokens 9.98 | batch_size 8 | grad_norm 13.93 | clip 1
+INFO: Epoch 009: valid_loss 4.08 | num_tokens 10.1 | batch_size 500 | valid_perplexity 58.9
+INFO: Epoch 010: loss 3.379 | lr 0.0005 | num_tokens 9.98 | batch_size 8 | grad_norm 14.26 | clip 1
+INFO: Epoch 010: valid_loss 3.99 | num_tokens 10.1 | batch_size 500 | valid_perplexity 54.2
+INFO: Epoch 011: loss 3.306 | lr 0.0005 | num_tokens 9.98 | batch_size 8 | grad_norm 14.58 | clip 1
+INFO: Epoch 011: valid_loss 3.96 | num_tokens 10.1 | batch_size 500 | valid_perplexity 52.7
+INFO: Epoch 012: loss 3.232 | lr 0.0005 | num_tokens 9.98 | batch_size 8 | grad_norm 14.68 | clip 1
+INFO: Epoch 012: valid_loss 3.9 | num_tokens 10.1 | batch_size 500 | valid_perplexity 49.5
+INFO: Epoch 013: loss 3.17 | lr 0.0005 | num_tokens 9.98 | batch_size 8 | grad_norm 14.88 | clip 1
+INFO: Epoch 013: valid_loss 3.82 | num_tokens 10.1 | batch_size 500 | valid_perplexity 45.5
+INFO: Epoch 014: loss 3.111 | lr 0.0005 | num_tokens 9.98 | batch_size 8 | grad_norm 15.08 | clip 1
+INFO: Epoch 014: valid_loss 3.77 | num_tokens 10.1 | batch_size 500 | valid_perplexity 43.4
+INFO: Epoch 015: loss 3.053 | lr 0.0005 | num_tokens 9.98 | batch_size 8 | grad_norm 15.2 | clip 1
+INFO: Epoch 015: valid_loss 3.73 | num_tokens 10.1 | batch_size 500 | valid_perplexity 41.6
+INFO: Epoch 016: loss 3.001 | lr 0.0005 | num_tokens 9.98 | batch_size 8 | grad_norm 15.4 | clip 1
+INFO: Epoch 016: valid_loss 3.65 | num_tokens 10.1 | batch_size 500 | valid_perplexity 38.5
+INFO: Epoch 017: loss 2.946 | lr 0.0005 | num_tokens 9.98 | batch_size 8 | grad_norm 15.57 | clip 1
+INFO: Epoch 017: valid_loss 3.62 | num_tokens 10.1 | batch_size 500 | valid_perplexity 37.2
+INFO: Epoch 018: loss 2.895 | lr 0.0005 | num_tokens 9.98 | batch_size 8 | grad_norm 15.75 | clip 1
+INFO: Epoch 018: valid_loss 3.59 | num_tokens 10.1 | batch_size 500 | valid_perplexity 36.3
+INFO: Epoch 019: loss 2.85 | lr 0.0005 | num_tokens 9.98 | batch_size 8 | grad_norm 15.91 | clip 1
+INFO: Epoch 019: valid_loss 3.52 | num_tokens 10.1 | batch_size 500 | valid_perplexity 33.9
+INFO: Epoch 020: loss 2.807 | lr 0.0005 | num_tokens 9.98 | batch_size 8 | grad_norm 16.04 | clip 1
+INFO: Epoch 020: valid_loss 3.53 | num_tokens 10.1 | batch_size 500 | valid_perplexity 34.1
+INFO: Epoch 021: loss 2.763 | lr 0.0005 | num_tokens 9.98 | batch_size 8 | grad_norm 16.21 | clip 1
+INFO: Epoch 021: valid_loss 3.5 | num_tokens 10.1 | batch_size 500 | valid_perplexity 33
+INFO: Epoch 022: loss 2.722 | lr 0.0005 | num_tokens 9.98 | batch_size 8 | grad_norm 16.35 | clip 1
+INFO: Epoch 022: valid_loss 3.46 | num_tokens 10.1 | batch_size 500 | valid_perplexity 31.8
+INFO: Epoch 023: loss 2.681 | lr 0.0005 | num_tokens 9.98 | batch_size 8 | grad_norm 16.4 | clip 1
+INFO: Epoch 023: valid_loss 3.41 | num_tokens 10.1 | batch_size 500 | valid_perplexity 30.3
+INFO: Epoch 024: loss 2.648 | lr 0.0005 | num_tokens 9.98 | batch_size 8 | grad_norm 16.51 | clip 1
+INFO: Epoch 024: valid_loss 3.42 | num_tokens 10.1 | batch_size 500 | valid_perplexity 30.5
+INFO: Epoch 025: loss 2.611 | lr 0.0005 | num_tokens 9.98 | batch_size 8 | grad_norm 16.67 | clip 1
+INFO: Epoch 025: valid_loss 3.39 | num_tokens 10.1 | batch_size 500 | valid_perplexity 29.6
+INFO: Epoch 026: loss 2.577 | lr 0.0005 | num_tokens 9.98 | batch_size 8 | grad_norm 16.69 | clip 1
+INFO: Epoch 026: valid_loss 3.36 | num_tokens 10.1 | batch_size 500 | valid_perplexity 28.8
+INFO: Epoch 027: loss 2.539 | lr 0.0005 | num_tokens 9.98 | batch_size 8 | grad_norm 16.88 | clip 1
+INFO: Epoch 027: valid_loss 3.33 | num_tokens 10.1 | batch_size 500 | valid_perplexity 28.1
+INFO: Epoch 028: loss 2.517 | lr 0.0005 | num_tokens 9.98 | batch_size 8 | grad_norm 16.98 | clip 1
+INFO: Epoch 028: valid_loss 3.3 | num_tokens 10.1 | batch_size 500 | valid_perplexity 27.2
+INFO: Epoch 029: loss 2.481 | lr 0.0005 | num_tokens 9.98 | batch_size 8 | grad_norm 17.02 | clip 1
+INFO: Epoch 029: valid_loss 3.29 | num_tokens 10.1 | batch_size 500 | valid_perplexity 26.7
+INFO: Epoch 030: loss 2.457 | lr 0.0005 | num_tokens 9.98 | batch_size 8 | grad_norm 17.2 | clip 1
+INFO: Epoch 030: valid_loss 3.25 | num_tokens 10.1 | batch_size 500 | valid_perplexity 25.8
+INFO: Epoch 031: loss 2.421 | lr 0.0005 | num_tokens 9.98 | batch_size 8 | grad_norm 17.24 | clip 1
+INFO: Epoch 031: valid_loss 3.25 | num_tokens 10.1 | batch_size 500 | valid_perplexity 25.7
+INFO: Epoch 032: loss 2.396 | lr 0.0005 | num_tokens 9.98 | batch_size 8 | grad_norm 17.3 | clip 1
+INFO: Epoch 032: valid_loss 3.26 | num_tokens 10.1 | batch_size 500 | valid_perplexity 26
+INFO: Epoch 033: loss 2.372 | lr 0.0005 | num_tokens 9.98 | batch_size 8 | grad_norm 17.31 | clip 1
+INFO: Epoch 033: valid_loss 3.21 | num_tokens 10.1 | batch_size 500 | valid_perplexity 24.9
+INFO: Epoch 034: loss 2.346 | lr 0.0005 | num_tokens 9.98 | batch_size 8 | grad_norm 17.29 | clip 1
+INFO: Epoch 034: valid_loss 3.21 | num_tokens 10.1 | batch_size 500 | valid_perplexity 24.9
+INFO: Epoch 035: loss 2.316 | lr 0.0005 | num_tokens 9.98 | batch_size 8 | grad_norm 17.53 | clip 1
+INFO: Epoch 035: valid_loss 3.2 | num_tokens 10.1 | batch_size 500 | valid_perplexity 24.6
+INFO: Epoch 036: loss 2.295 | lr 0.0005 | num_tokens 9.98 | batch_size 8 | grad_norm 17.59 | clip 1
+INFO: Epoch 036: valid_loss 3.2 | num_tokens 10.1 | batch_size 500 | valid_perplexity 24.4
+INFO: Epoch 037: loss 2.272 | lr 0.0005 | num_tokens 9.98 | batch_size 8 | grad_norm 17.67 | clip 1
+INFO: Epoch 037: valid_loss 3.19 | num_tokens 10.1 | batch_size 500 | valid_perplexity 24.4
+INFO: Epoch 038: loss 2.252 | lr 0.0005 | num_tokens 9.98 | batch_size 8 | grad_norm 17.69 | clip 1
+INFO: Epoch 038: valid_loss 3.17 | num_tokens 10.1 | batch_size 500 | valid_perplexity 23.8
+INFO: Epoch 039: loss 2.231 | lr 0.0005 | num_tokens 9.98 | batch_size 8 | grad_norm 17.86 | clip 1
+INFO: Epoch 039: valid_loss 3.17 | num_tokens 10.1 | batch_size 500 | valid_perplexity 23.7
+INFO: Epoch 040: loss 2.21 | lr 0.0005 | num_tokens 9.98 | batch_size 8 | grad_norm 17.79 | clip 1
+INFO: Epoch 040: valid_loss 3.15 | num_tokens 10.1 | batch_size 500 | valid_perplexity 23.4
+INFO: Epoch 041: loss 2.192 | lr 0.0005 | num_tokens 9.98 | batch_size 8 | grad_norm 17.95 | clip 1
+INFO: Epoch 041: valid_loss 3.12 | num_tokens 10.1 | batch_size 500 | valid_perplexity 22.8
+INFO: Epoch 042: loss 2.167 | lr 0.0005 | num_tokens 9.98 | batch_size 8 | grad_norm 17.85 | clip 1
+INFO: Epoch 042: valid_loss 3.12 | num_tokens 10.1 | batch_size 500 | valid_perplexity 22.6
+INFO: Epoch 043: loss 2.148 | lr 0.0005 | num_tokens 9.98 | batch_size 8 | grad_norm 17.91 | clip 1
+INFO: Epoch 043: valid_loss 3.11 | num_tokens 10.1 | batch_size 500 | valid_perplexity 22.3
+INFO: Epoch 044: loss 2.131 | lr 0.0005 | num_tokens 9.98 | batch_size 8 | grad_norm 17.92 | clip 1
+INFO: Epoch 044: valid_loss 3.11 | num_tokens 10.1 | batch_size 500 | valid_perplexity 22.5
+INFO: Epoch 045: loss 2.106 | lr 0.0005 | num_tokens 9.98 | batch_size 8 | grad_norm 17.95 | clip 1
+INFO: Epoch 045: valid_loss 3.1 | num_tokens 10.1 | batch_size 500 | valid_perplexity 22.2
+INFO: Epoch 046: loss 2.089 | lr 0.0005 | num_tokens 9.98 | batch_size 8 | grad_norm 18.04 | clip 1
+INFO: Epoch 046: valid_loss 3.1 | num_tokens 10.1 | batch_size 500 | valid_perplexity 22.1
+INFO: Epoch 047: loss 2.073 | lr 0.0005 | num_tokens 9.98 | batch_size 8 | grad_norm 18.27 | clip 1
+INFO: Epoch 047: valid_loss 3.09 | num_tokens 10.1 | batch_size 500 | valid_perplexity 22
+INFO: Epoch 048: loss 2.068 | lr 0.0005 | num_tokens 9.98 | batch_size 8 | grad_norm 18.18 | clip 1
+INFO: Epoch 048: valid_loss 3.08 | num_tokens 10.1 | batch_size 500 | valid_perplexity 21.8
+INFO: Epoch 049: loss 2.042 | lr 0.0005 | num_tokens 9.98 | batch_size 8 | grad_norm 18.28 | clip 1
+INFO: Epoch 049: valid_loss 3.05 | num_tokens 10.1 | batch_size 500 | valid_perplexity 21.1
+INFO: Epoch 050: loss 2.023 | lr 0.0005 | num_tokens 9.98 | batch_size 8 | grad_norm 18.15 | clip 1
+INFO: Epoch 050: valid_loss 3.07 | num_tokens 10.1 | batch_size 500 | valid_perplexity 21.6
+INFO: Epoch 051: loss 2.009 | lr 0.0005 | num_tokens 9.98 | batch_size 8 | grad_norm 18.23 | clip 1
+INFO: Epoch 051: valid_loss 3.06 | num_tokens 10.1 | batch_size 500 | valid_perplexity 21.2
+INFO: Epoch 052: loss 1.997 | lr 0.0005 | num_tokens 9.98 | batch_size 8 | grad_norm 18.23 | clip 1
+INFO: Epoch 052: valid_loss 3.03 | num_tokens 10.1 | batch_size 500 | valid_perplexity 20.8
+INFO: Epoch 053: loss 1.975 | lr 0.0005 | num_tokens 9.98 | batch_size 8 | grad_norm 18.23 | clip 1
+INFO: Epoch 053: valid_loss 3.04 | num_tokens 10.1 | batch_size 500 | valid_perplexity 21
+INFO: Epoch 054: loss 1.965 | lr 0.0005 | num_tokens 9.98 | batch_size 8 | grad_norm 18.37 | clip 1
+INFO: Epoch 054: valid_loss 3.04 | num_tokens 10.1 | batch_size 500 | valid_perplexity 20.8
+INFO: Epoch 055: loss 1.95 | lr 0.0005 | num_tokens 9.98 | batch_size 8 | grad_norm 18.43 | clip 1
+INFO: Epoch 055: valid_loss 3.04 | num_tokens 10.1 | batch_size 500 | valid_perplexity 21
+INFO: No validation set improvements observed for 3 epochs. Early stop!
+train done!
+[2023-11-02 18:30:10] COMMAND: translate.py --data /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.0/prepared/ --dicts /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.0/prepared/ --checkpoint-path /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.0/checkpoint_last.pt --output /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.0/translated.en.txt
+[2023-11-02 18:30:10] Arguments: {'cuda': False, 'data': '/cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.0/prepared/', 'source_lang': 'fr', 'target_lang': 'en', 'max_tokens': None, 'batch_size': 1, 'train_on_tiny': False, 'arch': 'lstm', 'max_epoch': 10000, 'clip_norm': 4.0, 'lr': 0.0005, 'patience': 3, 'log_file': None, 'save_dir': '/cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.0', 'restore_file': 'checkpoint_last.pt', 'save_interval': 1, 'no_save': False, 'epoch_checkpoints': False, 'encoder_num_layers': 2, 'decoder_num_layers': 2, 'encoder_dropout_in': 0.3, 'encoder_dropout_out': 0.3, 'decoder_dropout_in': 0.3, 'decoder_dropout_out': 0.3, 'encoder_embed_dim': 64, 'encoder_embed_path': None, 'encoder_hidden_size': 64, 'encoder_bidirectional': 'True', 'decoder_embed_dim': 64, 'decoder_embed_path': None, 'decoder_hidden_size': 128, 'decoder_use_attention': 'True', 'decoder_use_lexical_model': 'False', 'device_id': 0, 'seed': 42, 'dicts': '/cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.0/prepared/', 'checkpoint_path': '/cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.0/checkpoint_last.pt', 'output': '/cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.0/translated.en.txt', 'max_len': 128}
+[2023-11-02 18:30:10] Loaded a source dictionary (fr) with 4000 words
+[2023-11-02 18:30:10] Loaded a target dictionary (en) with 4000 words
+[2023-11-02 18:30:10] Loaded a model from checkpoint /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.0/checkpoint_last.pt
+translate done!
+dropout 0.0
+{
+ "name": "BLEU",
+ "score": 14.2,
+ "signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.3.1",
+ "verbose_score": "43.1/19.5/9.8/5.0 (BP = 1.000 ratio = 1.275 hyp_len = 4961 ref_len = 3892)",
+ "nrefs": "1",
+ "case": "mixed",
+ "eff": "no",
+ "tok": "13a",
+ "smooth": "exp",
+ "version": "2.3.1"
+}
+---------------------------------------------
+dropout 0.025
+[2023-11-02 18:52:03] COMMAND: bpe-preprocess.py --target-lang en --source-lang fr --dest-dir /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.025/prepared/ --train-prefix /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.025/preprocessed/train --valid-prefix /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.025/preprocessed/valid --test-prefix /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.025/preprocessed/test --tiny-train-prefix /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.025/preprocessed/tiny_train --threshold-src 1 --threshold-tgt 1 --num-words-src 4000 --num-words-tgt 4000 --bpe-dropout 0.025
+[2023-11-02 18:52:03] Arguments: {'source_lang': 'fr', 'target_lang': 'en', 'train_prefix': '/cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.025/preprocessed/train', 'tiny_train_prefix': '/cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.025/preprocessed/tiny_train', 'valid_prefix': '/cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.025/preprocessed/valid', 'test_prefix': '/cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.025/preprocessed/test', 'dest_dir': '/cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.025/prepared/', 'threshold_src': 1, 'num_words_src': 4000, 'threshold_tgt': 1, 'num_words_tgt': 4000, 'vocab_src': None, 'vocab_trg': None, 'quiet': False, 'bpe_dropout': 0.025}
+[2023-11-02 18:52:03] COMMAND: bpe-preprocess.py --target-lang en --source-lang fr --dest-dir /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.025/prepared/ --train-prefix /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.025/preprocessed/train --valid-prefix /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.025/preprocessed/valid --test-prefix /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.025/preprocessed/test --tiny-train-prefix /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.025/preprocessed/tiny_train --threshold-src 1 --threshold-tgt 1 --num-words-src 4000 --num-words-tgt 4000 --bpe-dropout 0.025
+[2023-11-02 18:52:03] Arguments: {'source_lang': 'fr', 'target_lang': 'en', 'train_prefix': '/cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.025/preprocessed/train', 'tiny_train_prefix': '/cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.025/preprocessed/tiny_train', 'valid_prefix': '/cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.025/preprocessed/valid', 'test_prefix': '/cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.025/preprocessed/test', 'dest_dir': '/cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.025/prepared/', 'threshold_src': 1, 'num_words_src': 4000, 'threshold_tgt': 1, 'num_words_tgt': 4000, 'vocab_src': None, 'vocab_trg': None, 'quiet': False, 'bpe_dropout': 0.025}
+[2023-11-02 18:52:49] Built a source dictionary (fr) with 4000 words
+[2023-11-02 18:53:23] Built a target dictionary (en) with 4000 words
+[2023-11-02 18:54:43] Built a binary dataset for /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.025/preprocessed/train.fr: 10000 sentences, 128931 tokens, 0.002% replaced by unknown token
+[2023-11-02 18:54:51] Built a binary dataset for /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.025/preprocessed/tiny_train.fr: 1000 sentences, 13019 tokens, 0.000% replaced by unknown token
+[2023-11-02 18:54:55] Built a binary dataset for /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.025/preprocessed/valid.fr: 500 sentences, 6534 tokens, 0.000% replaced by unknown token
+[2023-11-02 18:54:59] Built a binary dataset for /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.025/preprocessed/test.fr: 500 sentences, 6535 tokens, 0.015% replaced by unknown token
+[2023-11-02 18:56:13] Built a binary dataset for /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.025/preprocessed/train.en: 10000 sentences, 111109 tokens, 0.003% replaced by unknown token
+[2023-11-02 18:56:20] Built a binary dataset for /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.025/preprocessed/tiny_train.en: 1000 sentences, 11370 tokens, 0.018% replaced by unknown token
+[2023-11-02 18:56:24] Built a binary dataset for /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.025/preprocessed/valid.en: 500 sentences, 5632 tokens, 0.000% replaced by unknown token
+[2023-11-02 18:56:28] Built a binary dataset for /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.025/preprocessed/test.en: 500 sentences, 5725 tokens, 0.035% replaced by unknown token
+preprocess done!
+INFO: Commencing training!
+INFO: COMMAND: train.py --data /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.025/prepared/ --source-lang fr --target-lang en --save-dir /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.025 --lr 0.0005 --batch-size 8 --encoder-num-layers 2 --decoder-num-layers 2 --encoder-dropout-in 0.3 --encoder-dropout-out 0.3 --decoder-dropout-in 0.3 --decoder-dropout-out 0.3
+INFO: Arguments: {'cuda': False, 'data': '/cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.025/prepared/', 'source_lang': 'fr', 'target_lang': 'en', 'max_tokens': None, 'batch_size': 8, 'train_on_tiny': False, 'arch': 'lstm', 'max_epoch': 10000, 'clip_norm': 4.0, 'lr': 0.0005, 'patience': 3, 'log_file': None, 'save_dir': '/cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.025', 'restore_file': 'checkpoint_last.pt', 'save_interval': 1, 'no_save': False, 'epoch_checkpoints': False, 'encoder_num_layers': 2, 'decoder_num_layers': 2, 'encoder_dropout_in': 0.3, 'encoder_dropout_out': 0.3, 'decoder_dropout_in': 0.3, 'decoder_dropout_out': 0.3, 'encoder_embed_dim': 64, 'encoder_embed_path': None, 'encoder_hidden_size': 64, 'encoder_bidirectional': 'True', 'decoder_embed_dim': 64, 'decoder_embed_path': None, 'decoder_hidden_size': 128, 'decoder_use_attention': 'True', 'decoder_use_lexical_model': 'False', 'device_id': 0}
+INFO: Loaded a source dictionary (fr) with 4000 words
+INFO: Loaded a target dictionary (en) with 4000 words
+INFO: Built a model with 1540000 parameters
+INFO: Epoch 000: loss 5.664 | lr 0.0005 | num_tokens 11.11 | batch_size 8 | grad_norm 11.89 | clip 0.9856
+INFO: Epoch 000: valid_loss 5.9 | num_tokens 11.3 | batch_size 500 | valid_perplexity 365
+INFO: Epoch 001: loss 5.06 | lr 0.0005 | num_tokens 11.11 | batch_size 8 | grad_norm 9.855 | clip 1
+INFO: Epoch 001: valid_loss 5.46 | num_tokens 11.3 | batch_size 500 | valid_perplexity 234
+INFO: Epoch 002: loss 4.814 | lr 0.0005 | num_tokens 11.11 | batch_size 8 | grad_norm 10.36 | clip 1
+INFO: Epoch 002: valid_loss 5.18 | num_tokens 11.3 | batch_size 500 | valid_perplexity 178
+INFO: Epoch 003: loss 4.605 | lr 0.0005 | num_tokens 11.11 | batch_size 8 | grad_norm 11.24 | clip 1
+INFO: Epoch 003: valid_loss 4.98 | num_tokens 11.3 | batch_size 500 | valid_perplexity 145
+INFO: Epoch 004: loss 4.431 | lr 0.0005 | num_tokens 11.11 | batch_size 8 | grad_norm 11.93 | clip 1
+INFO: Epoch 004: valid_loss 4.8 | num_tokens 11.3 | batch_size 500 | valid_perplexity 122
+INFO: Epoch 005: loss 4.282 | lr 0.0005 | num_tokens 11.11 | batch_size 8 | grad_norm 12.46 | clip 1
+INFO: Epoch 005: valid_loss 4.67 | num_tokens 11.3 | batch_size 500 | valid_perplexity 107
+INFO: Epoch 006: loss 4.155 | lr 0.0005 | num_tokens 11.11 | batch_size 8 | grad_norm 12.92 | clip 1
+INFO: Epoch 006: valid_loss 4.54 | num_tokens 11.3 | batch_size 500 | valid_perplexity 94
+INFO: Epoch 007: loss 4.049 | lr 0.0005 | num_tokens 11.11 | batch_size 8 | grad_norm 13.39 | clip 1
+INFO: Epoch 007: valid_loss 4.46 | num_tokens 11.3 | batch_size 500 | valid_perplexity 86.5
+INFO: Epoch 008: loss 3.949 | lr 0.0005 | num_tokens 11.11 | batch_size 8 | grad_norm 13.6 | clip 1
+INFO: Epoch 008: valid_loss 4.36 | num_tokens 11.3 | batch_size 500 | valid_perplexity 78.6
+INFO: Epoch 009: loss 3.867 | lr 0.0005 | num_tokens 11.11 | batch_size 8 | grad_norm 13.9 | clip 1
+INFO: Epoch 009: valid_loss 4.29 | num_tokens 11.3 | batch_size 500 | valid_perplexity 73.3
+INFO: Epoch 010: loss 3.787 | lr 0.0005 | num_tokens 11.11 | batch_size 8 | grad_norm 14.2 | clip 1
+INFO: Epoch 010: valid_loss 4.22 | num_tokens 11.3 | batch_size 500 | valid_perplexity 68.2
+INFO: Epoch 011: loss 3.72 | lr 0.0005 | num_tokens 11.11 | batch_size 8 | grad_norm 14.46 | clip 1
+INFO: Epoch 011: valid_loss 4.19 | num_tokens 11.3 | batch_size 500 | valid_perplexity 66.2
+INFO: Epoch 012: loss 3.654 | lr 0.0005 | num_tokens 11.11 | batch_size 8 | grad_norm 14.78 | clip 1
+INFO: Epoch 012: valid_loss 4.14 | num_tokens 11.3 | batch_size 500 | valid_perplexity 62.7
+INFO: Epoch 013: loss 3.594 | lr 0.0005 | num_tokens 11.11 | batch_size 8 | grad_norm 14.99 | clip 1
+INFO: Epoch 013: valid_loss 4.08 | num_tokens 11.3 | batch_size 500 | valid_perplexity 58.9
+INFO: Epoch 014: loss 3.535 | lr 0.0005 | num_tokens 11.11 | batch_size 8 | grad_norm 15.15 | clip 1
+INFO: Epoch 014: valid_loss 4.04 | num_tokens 11.3 | batch_size 500 | valid_perplexity 56.6
+INFO: Epoch 015: loss 3.486 | lr 0.0005 | num_tokens 11.11 | batch_size 8 | grad_norm 15.39 | clip 1
+INFO: Epoch 015: valid_loss 4.03 | num_tokens 11.3 | batch_size 500 | valid_perplexity 56.3
+INFO: Epoch 016: loss 3.439 | lr 0.0005 | num_tokens 11.11 | batch_size 8 | grad_norm 15.5 | clip 1
+INFO: Epoch 016: valid_loss 4 | num_tokens 11.3 | batch_size 500 | valid_perplexity 54.6
+INFO: Epoch 017: loss 3.392 | lr 0.0005 | num_tokens 11.11 | batch_size 8 | grad_norm 15.71 | clip 1
+INFO: Epoch 017: valid_loss 3.96 | num_tokens 11.3 | batch_size 500 | valid_perplexity 52.4
+INFO: Epoch 018: loss 3.348 | lr 0.0005 | num_tokens 11.11 | batch_size 8 | grad_norm 15.96 | clip 1
+INFO: Epoch 018: valid_loss 3.94 | num_tokens 11.3 | batch_size 500 | valid_perplexity 51.5
+INFO: Epoch 019: loss 3.303 | lr 0.0005 | num_tokens 11.11 | batch_size 8 | grad_norm 16.08 | clip 1
+INFO: Epoch 019: valid_loss 3.93 | num_tokens 11.3 | batch_size 500 | valid_perplexity 50.7
+INFO: Epoch 020: loss 3.265 | lr 0.0005 | num_tokens 11.11 | batch_size 8 | grad_norm 16.2 | clip 1
+INFO: Epoch 020: valid_loss 3.91 | num_tokens 11.3 | batch_size 500 | valid_perplexity 50.1
+INFO: Epoch 021: loss 3.227 | lr 0.0005 | num_tokens 11.11 | batch_size 8 | grad_norm 16.46 | clip 1
+INFO: Epoch 021: valid_loss 3.87 | num_tokens 11.3 | batch_size 500 | valid_perplexity 48.1
+INFO: Epoch 022: loss 3.192 | lr 0.0005 | num_tokens 11.11 | batch_size 8 | grad_norm 16.5 | clip 1
+INFO: Epoch 022: valid_loss 3.83 | num_tokens 11.3 | batch_size 500 | valid_perplexity 46.3
+INFO: Epoch 023: loss 3.157 | lr 0.0005 | num_tokens 11.11 | batch_size 8 | grad_norm 16.6 | clip 1
+INFO: Epoch 023: valid_loss 3.81 | num_tokens 11.3 | batch_size 500 | valid_perplexity 45.1
+INFO: Epoch 024: loss 3.129 | lr 0.0005 | num_tokens 11.11 | batch_size 8 | grad_norm 16.73 | clip 1
+INFO: Epoch 024: valid_loss 3.79 | num_tokens 11.3 | batch_size 500 | valid_perplexity 44.3
+INFO: Epoch 025: loss 3.091 | lr 0.0005 | num_tokens 11.11 | batch_size 8 | grad_norm 16.82 | clip 1
+INFO: Epoch 025: valid_loss 3.78 | num_tokens 11.3 | batch_size 500 | valid_perplexity 43.8
+INFO: Epoch 026: loss 3.064 | lr 0.0005 | num_tokens 11.11 | batch_size 8 | grad_norm 16.99 | clip 1
+INFO: Epoch 026: valid_loss 3.77 | num_tokens 11.3 | batch_size 500 | valid_perplexity 43.5
+INFO: Epoch 027: loss 3.035 | lr 0.0005 | num_tokens 11.11 | batch_size 8 | grad_norm 17.14 | clip 1
+INFO: Epoch 027: valid_loss 3.74 | num_tokens 11.3 | batch_size 500 | valid_perplexity 42.3
+INFO: Epoch 028: loss 3.006 | lr 0.0005 | num_tokens 11.11 | batch_size 8 | grad_norm 17.16 | clip 1
+INFO: Epoch 028: valid_loss 3.74 | num_tokens 11.3 | batch_size 500 | valid_perplexity 42
+INFO: Epoch 029: loss 2.98 | lr 0.0005 | num_tokens 11.11 | batch_size 8 | grad_norm 17.28 | clip 1
+INFO: Epoch 029: valid_loss 3.71 | num_tokens 11.3 | batch_size 500 | valid_perplexity 41
+INFO: Epoch 030: loss 2.949 | lr 0.0005 | num_tokens 11.11 | batch_size 8 | grad_norm 17.41 | clip 1
+INFO: Epoch 030: valid_loss 3.7 | num_tokens 11.3 | batch_size 500 | valid_perplexity 40.6
+INFO: Epoch 031: loss 2.922 | lr 0.0005 | num_tokens 11.11 | batch_size 8 | grad_norm 17.55 | clip 1
+INFO: Epoch 031: valid_loss 3.66 | num_tokens 11.3 | batch_size 500 | valid_perplexity 38.7
+INFO: Epoch 032: loss 2.9 | lr 0.0005 | num_tokens 11.11 | batch_size 8 | grad_norm 17.64 | clip 1
+INFO: Epoch 032: valid_loss 3.69 | num_tokens 11.3 | batch_size 500 | valid_perplexity 40
+INFO: Epoch 033: loss 2.875 | lr 0.0005 | num_tokens 11.11 | batch_size 8 | grad_norm 17.72 | clip 1
+INFO: Epoch 033: valid_loss 3.65 | num_tokens 11.3 | batch_size 500 | valid_perplexity 38.4
+INFO: Epoch 034: loss 2.853 | lr 0.0005 | num_tokens 11.11 | batch_size 8 | grad_norm 17.89 | clip 1
+INFO: Epoch 034: valid_loss 3.68 | num_tokens 11.3 | batch_size 500 | valid_perplexity 39.6
+INFO: Epoch 035: loss 2.834 | lr 0.0005 | num_tokens 11.11 | batch_size 8 | grad_norm 17.84 | clip 1
+INFO: Epoch 035: valid_loss 3.65 | num_tokens 11.3 | batch_size 500 | valid_perplexity 38.3
+INFO: Epoch 036: loss 2.803 | lr 0.0005 | num_tokens 11.11 | batch_size 8 | grad_norm 17.88 | clip 1
+INFO: Epoch 036: valid_loss 3.62 | num_tokens 11.3 | batch_size 500 | valid_perplexity 37.5
+INFO: Epoch 037: loss 2.787 | lr 0.0005 | num_tokens 11.11 | batch_size 8 | grad_norm 18.04 | clip 1
+INFO: Epoch 037: valid_loss 3.61 | num_tokens 11.3 | batch_size 500 | valid_perplexity 37.2
+INFO: Epoch 038: loss 2.757 | lr 0.0005 | num_tokens 11.11 | batch_size 8 | grad_norm 18.06 | clip 1
+INFO: Epoch 038: valid_loss 3.6 | num_tokens 11.3 | batch_size 500 | valid_perplexity 36.8
+INFO: Epoch 039: loss 2.736 | lr 0.0005 | num_tokens 11.11 | batch_size 8 | grad_norm 18.13 | clip 1
+INFO: Epoch 039: valid_loss 3.61 | num_tokens 11.3 | batch_size 500 | valid_perplexity 36.9
+INFO: Epoch 040: loss 2.719 | lr 0.0005 | num_tokens 11.11 | batch_size 8 | grad_norm 18.26 | clip 1
+INFO: Epoch 040: valid_loss 3.6 | num_tokens 11.3 | batch_size 500 | valid_perplexity 36.7
+INFO: Epoch 041: loss 2.702 | lr 0.0005 | num_tokens 11.11 | batch_size 8 | grad_norm 18.28 | clip 1
+INFO: Epoch 041: valid_loss 3.59 | num_tokens 11.3 | batch_size 500 | valid_perplexity 36.3
+INFO: Epoch 042: loss 2.677 | lr 0.0005 | num_tokens 11.11 | batch_size 8 | grad_norm 18.34 | clip 1
+INFO: Epoch 042: valid_loss 3.6 | num_tokens 11.3 | batch_size 500 | valid_perplexity 36.5
+INFO: Epoch 043: loss 2.658 | lr 0.0005 | num_tokens 11.11 | batch_size 8 | grad_norm 18.44 | clip 1
+INFO: Epoch 043: valid_loss 3.58 | num_tokens 11.3 | batch_size 500 | valid_perplexity 35.8
+INFO: Epoch 044: loss 2.636 | lr 0.0005 | num_tokens 11.11 | batch_size 8 | grad_norm 18.44 | clip 1
+INFO: Epoch 044: valid_loss 3.57 | num_tokens 11.3 | batch_size 500 | valid_perplexity 35.4
+INFO: Epoch 045: loss 2.629 | lr 0.0005 | num_tokens 11.11 | batch_size 8 | grad_norm 18.53 | clip 1
+INFO: Epoch 045: valid_loss 3.56 | num_tokens 11.3 | batch_size 500 | valid_perplexity 35.2
+INFO: Epoch 046: loss 2.601 | lr 0.0005 | num_tokens 11.11 | batch_size 8 | grad_norm 18.65 | clip 1
+INFO: Epoch 046: valid_loss 3.56 | num_tokens 11.3 | batch_size 500 | valid_perplexity 35.2
+INFO: Epoch 047: loss 2.593 | lr 0.0005 | num_tokens 11.11 | batch_size 8 | grad_norm 18.73 | clip 1
+INFO: Epoch 047: valid_loss 3.55 | num_tokens 11.3 | batch_size 500 | valid_perplexity 34.9
+INFO: Epoch 048: loss 2.576 | lr 0.0005 | num_tokens 11.11 | batch_size 8 | grad_norm 18.78 | clip 1
+INFO: Epoch 048: valid_loss 3.56 | num_tokens 11.3 | batch_size 500 | valid_perplexity 35
+INFO: Epoch 049: loss 2.55 | lr 0.0005 | num_tokens 11.11 | batch_size 8 | grad_norm 18.71 | clip 1
+INFO: Epoch 049: valid_loss 3.54 | num_tokens 11.3 | batch_size 500 | valid_perplexity 34.5
+INFO: Epoch 050: loss 2.538 | lr 0.0005 | num_tokens 11.11 | batch_size 8 | grad_norm 18.8 | clip 1
+INFO: Epoch 050: valid_loss 3.55 | num_tokens 11.3 | batch_size 500 | valid_perplexity 34.8
+INFO: Epoch 051: loss 2.521 | lr 0.0005 | num_tokens 11.11 | batch_size 8 | grad_norm 18.82 | clip 1
+INFO: Epoch 051: valid_loss 3.53 | num_tokens 11.3 | batch_size 500 | valid_perplexity 34.2
+INFO: Epoch 052: loss 2.509 | lr 0.0005 | num_tokens 11.11 | batch_size 8 | grad_norm 18.96 | clip 1
+INFO: Epoch 052: valid_loss 3.54 | num_tokens 11.3 | batch_size 500 | valid_perplexity 34.6
+INFO: Epoch 053: loss 2.489 | lr 0.0005 | num_tokens 11.11 | batch_size 8 | grad_norm 18.98 | clip 1
+INFO: Epoch 053: valid_loss 3.53 | num_tokens 11.3 | batch_size 500 | valid_perplexity 34
+INFO: Epoch 054: loss 2.475 | lr 0.0005 | num_tokens 11.11 | batch_size 8 | grad_norm 18.95 | clip 1
+INFO: Epoch 054: valid_loss 3.55 | num_tokens 11.3 | batch_size 500 | valid_perplexity 34.8
+INFO: Epoch 055: loss 2.466 | lr 0.0005 | num_tokens 11.11 | batch_size 8 | grad_norm 19 | clip 1
+INFO: Epoch 055: valid_loss 3.54 | num_tokens 11.3 | batch_size 500 | valid_perplexity 34.4
+INFO: Epoch 056: loss 2.452 | lr 0.0005 | num_tokens 11.11 | batch_size 8 | grad_norm 19.07 | clip 1
+INFO: Epoch 056: valid_loss 3.53 | num_tokens 11.3 | batch_size 500 | valid_perplexity 34.1
+INFO: No validation set improvements observed for 3 epochs. Early stop!
+train done!
+[2023-11-02 19:58:49] COMMAND: translate.py --data /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.025/prepared/ --dicts /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.025/prepared/ --checkpoint-path /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.025/checkpoint_last.pt --output /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.025/translated.en.txt
+[2023-11-02 19:58:49] Arguments: {'cuda': False, 'data': '/cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.025/prepared/', 'source_lang': 'fr', 'target_lang': 'en', 'max_tokens': None, 'batch_size': 1, 'train_on_tiny': False, 'arch': 'lstm', 'max_epoch': 10000, 'clip_norm': 4.0, 'lr': 0.0005, 'patience': 3, 'log_file': None, 'save_dir': '/cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.025', 'restore_file': 'checkpoint_last.pt', 'save_interval': 1, 'no_save': False, 'epoch_checkpoints': False, 'encoder_num_layers': 2, 'decoder_num_layers': 2, 'encoder_dropout_in': 0.3, 'encoder_dropout_out': 0.3, 'decoder_dropout_in': 0.3, 'decoder_dropout_out': 0.3, 'encoder_embed_dim': 64, 'encoder_embed_path': None, 'encoder_hidden_size': 64, 'encoder_bidirectional': 'True', 'decoder_embed_dim': 64, 'decoder_embed_path': None, 'decoder_hidden_size': 128, 'decoder_use_attention': 'True', 'decoder_use_lexical_model': 'False', 'device_id': 0, 'seed': 42, 'dicts': '/cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.025/prepared/', 'checkpoint_path': '/cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.025/checkpoint_last.pt', 'output': '/cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.025/translated.en.txt', 'max_len': 128}
+[2023-11-02 19:58:49] Loaded a source dictionary (fr) with 4000 words
+[2023-11-02 19:58:49] Loaded a target dictionary (en) with 4000 words
+[2023-11-02 19:58:49] Loaded a model from checkpoint /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.025/checkpoint_last.pt
+translate done!
+dropout 0.025
+{
+ "name": "BLEU",
+ "score": 10.8,
+ "signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.3.1",
+ "verbose_score": "41.8/15.5/7.0/3.1 (BP = 1.000 ratio = 1.180 hyp_len = 4594 ref_len = 3892)",
+ "nrefs": "1",
+ "case": "mixed",
+ "eff": "no",
+ "tok": "13a",
+ "smooth": "exp",
+ "version": "2.3.1"
+}
+---------------------------------------------
+dropout 0.05
+[2023-11-02 20:20:54] COMMAND: bpe-preprocess.py --target-lang en --source-lang fr --dest-dir /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.05/prepared/ --train-prefix /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.05/preprocessed/train --valid-prefix /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.05/preprocessed/valid --test-prefix /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.05/preprocessed/test --tiny-train-prefix /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.05/preprocessed/tiny_train --threshold-src 1 --threshold-tgt 1 --num-words-src 4000 --num-words-tgt 4000 --bpe-dropout 0.05
+[2023-11-02 20:20:54] Arguments: {'source_lang': 'fr', 'target_lang': 'en', 'train_prefix': '/cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.05/preprocessed/train', 'tiny_train_prefix': '/cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.05/preprocessed/tiny_train', 'valid_prefix': '/cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.05/preprocessed/valid', 'test_prefix': '/cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.05/preprocessed/test', 'dest_dir': '/cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.05/prepared/', 'threshold_src': 1, 'num_words_src': 4000, 'threshold_tgt': 1, 'num_words_tgt': 4000, 'vocab_src': None, 'vocab_trg': None, 'quiet': False, 'bpe_dropout': 0.05}
+[2023-11-02 20:20:54] COMMAND: bpe-preprocess.py --target-lang en --source-lang fr --dest-dir /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.05/prepared/ --train-prefix /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.05/preprocessed/train --valid-prefix /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.05/preprocessed/valid --test-prefix /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.05/preprocessed/test --tiny-train-prefix /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.05/preprocessed/tiny_train --threshold-src 1 --threshold-tgt 1 --num-words-src 4000 --num-words-tgt 4000 --bpe-dropout 0.05
+[2023-11-02 20:20:54] Arguments: {'source_lang': 'fr', 'target_lang': 'en', 'train_prefix': '/cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.05/preprocessed/train', 'tiny_train_prefix': '/cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.05/preprocessed/tiny_train', 'valid_prefix': '/cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.05/preprocessed/valid', 'test_prefix': '/cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.05/preprocessed/test', 'dest_dir': '/cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.05/prepared/', 'threshold_src': 1, 'num_words_src': 4000, 'threshold_tgt': 1, 'num_words_tgt': 4000, 'vocab_src': None, 'vocab_trg': None, 'quiet': False, 'bpe_dropout': 0.05}
+[2023-11-02 20:21:40] Built a source dictionary (fr) with 4000 words
+[2023-11-02 20:22:14] Built a target dictionary (en) with 4000 words
+[2023-11-02 20:23:37] Built a binary dataset for /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.05/preprocessed/train.fr: 10000 sentences, 142989 tokens, 0.002% replaced by unknown token
+[2023-11-02 20:23:45] Built a binary dataset for /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.05/preprocessed/tiny_train.fr: 1000 sentences, 14364 tokens, 0.000% replaced by unknown token
+[2023-11-02 20:23:49] Built a binary dataset for /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.05/preprocessed/valid.fr: 500 sentences, 7156 tokens, 0.000% replaced by unknown token
+[2023-11-02 20:23:53] Built a binary dataset for /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.05/preprocessed/test.fr: 500 sentences, 7108 tokens, 0.014% replaced by unknown token
+[2023-11-02 20:25:09] Built a binary dataset for /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.05/preprocessed/train.en: 10000 sentences, 121802 tokens, 0.002% replaced by unknown token
+[2023-11-02 20:25:16] Built a binary dataset for /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.05/preprocessed/tiny_train.en: 1000 sentences, 12444 tokens, 0.016% replaced by unknown token
+[2023-11-02 20:25:20] Built a binary dataset for /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.05/preprocessed/valid.en: 500 sentences, 6177 tokens, 0.000% replaced by unknown token
+[2023-11-02 20:25:24] Built a binary dataset for /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.05/preprocessed/test.en: 500 sentences, 6222 tokens, 0.032% replaced by unknown token
+preprocess done!
+INFO: Commencing training!
+INFO: COMMAND: train.py --data /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.05/prepared/ --source-lang fr --target-lang en --save-dir /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.05 --lr 0.0005 --batch-size 8 --encoder-num-layers 2 --decoder-num-layers 2 --encoder-dropout-in 0.3 --encoder-dropout-out 0.3 --decoder-dropout-in 0.3 --decoder-dropout-out 0.3
+INFO: Arguments: {'cuda': False, 'data': '/cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.05/prepared/', 'source_lang': 'fr', 'target_lang': 'en', 'max_tokens': None, 'batch_size': 8, 'train_on_tiny': False, 'arch': 'lstm', 'max_epoch': 10000, 'clip_norm': 4.0, 'lr': 0.0005, 'patience': 3, 'log_file': None, 'save_dir': '/cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.05', 'restore_file': 'checkpoint_last.pt', 'save_interval': 1, 'no_save': False, 'epoch_checkpoints': False, 'encoder_num_layers': 2, 'decoder_num_layers': 2, 'encoder_dropout_in': 0.3, 'encoder_dropout_out': 0.3, 'decoder_dropout_in': 0.3, 'decoder_dropout_out': 0.3, 'encoder_embed_dim': 64, 'encoder_embed_path': None, 'encoder_hidden_size': 64, 'encoder_bidirectional': 'True', 'decoder_embed_dim': 64, 'decoder_embed_path': None, 'decoder_hidden_size': 128, 'decoder_use_attention': 'True', 'decoder_use_lexical_model': 'False', 'device_id': 0}
+INFO: Loaded a source dictionary (fr) with 4000 words
+INFO: Loaded a target dictionary (en) with 4000 words
+INFO: Built a model with 1540000 parameters
+INFO: Epoch 000: loss 5.786 | lr 0.0005 | num_tokens 12.18 | batch_size 8 | grad_norm 11.96 | clip 0.9848
+INFO: Epoch 000: valid_loss 5.76 | num_tokens 12.4 | batch_size 500 | valid_perplexity 318
+INFO: Epoch 001: loss 5.18 | lr 0.0005 | num_tokens 12.18 | batch_size 8 | grad_norm 10.05 | clip 1
+INFO: Epoch 001: valid_loss 5.47 | num_tokens 12.4 | batch_size 500 | valid_perplexity 238
+INFO: Epoch 002: loss 4.899 | lr 0.0005 | num_tokens 12.18 | batch_size 8 | grad_norm 11.24 | clip 1
+INFO: Epoch 002: valid_loss 5.16 | num_tokens 12.4 | batch_size 500 | valid_perplexity 174
+INFO: Epoch 003: loss 4.633 | lr 0.0005 | num_tokens 12.18 | batch_size 8 | grad_norm 12.28 | clip 1
+INFO: Epoch 003: valid_loss 4.94 | num_tokens 12.4 | batch_size 500 | valid_perplexity 140
+INFO: Epoch 004: loss 4.464 | lr 0.0005 | num_tokens 12.18 | batch_size 8 | grad_norm 12.85 | clip 1
+INFO: Epoch 004: valid_loss 4.8 | num_tokens 12.4 | batch_size 500 | valid_perplexity 122
+INFO: Epoch 005: loss 4.333 | lr 0.0005 | num_tokens 12.18 | batch_size 8 | grad_norm 13.32 | clip 1
+INFO: Epoch 005: valid_loss 4.67 | num_tokens 12.4 | batch_size 500 | valid_perplexity 107
+INFO: Epoch 006: loss 4.218 | lr 0.0005 | num_tokens 12.18 | batch_size 8 | grad_norm 13.72 | clip 1
+INFO: Epoch 006: valid_loss 4.56 | num_tokens 12.4 | batch_size 500 | valid_perplexity 95.9
+INFO: Epoch 007: loss 4.124 | lr 0.0005 | num_tokens 12.18 | batch_size 8 | grad_norm 14.09 | clip 1
+INFO: Epoch 007: valid_loss 4.51 | num_tokens 12.4 | batch_size 500 | valid_perplexity 90.5
+INFO: Epoch 008: loss 4.043 | lr 0.0005 | num_tokens 12.18 | batch_size 8 | grad_norm 14.41 | clip 1
+INFO: Epoch 008: valid_loss 4.41 | num_tokens 12.4 | batch_size 500 | valid_perplexity 82.5
+INFO: Epoch 009: loss 3.963 | lr 0.0005 | num_tokens 12.18 | batch_size 8 | grad_norm 14.71 | clip 1
+INFO: Epoch 009: valid_loss 4.35 | num_tokens 12.4 | batch_size 500 | valid_perplexity 77.8
+INFO: Epoch 010: loss 3.892 | lr 0.0005 | num_tokens 12.18 | batch_size 8 | grad_norm 14.96 | clip 1
+INFO: Epoch 010: valid_loss 4.29 | num_tokens 12.4 | batch_size 500 | valid_perplexity 73.2
+INFO: Epoch 011: loss 3.83 | lr 0.0005 | num_tokens 12.18 | batch_size 8 | grad_norm 15.27 | clip 1
+INFO: Epoch 011: valid_loss 4.23 | num_tokens 12.4 | batch_size 500 | valid_perplexity 68.7
+INFO: Epoch 012: loss 3.773 | lr 0.0005 | num_tokens 12.18 | batch_size 8 | grad_norm 15.45 | clip 1
+INFO: Epoch 012: valid_loss 4.22 | num_tokens 12.4 | batch_size 500 | valid_perplexity 67.8
+INFO: Epoch 013: loss 3.713 | lr 0.0005 | num_tokens 12.18 | batch_size 8 | grad_norm 15.66 | clip 1
+INFO: Epoch 013: valid_loss 4.17 | num_tokens 12.4 | batch_size 500 | valid_perplexity 64.8
+INFO: Epoch 014: loss 3.66 | lr 0.0005 | num_tokens 12.18 | batch_size 8 | grad_norm 15.91 | clip 1
+INFO: Epoch 014: valid_loss 4.13 | num_tokens 12.4 | batch_size 500 | valid_perplexity 62.3
+INFO: Epoch 015: loss 3.613 | lr 0.0005 | num_tokens 12.18 | batch_size 8 | grad_norm 16.09 | clip 1
+INFO: Epoch 015: valid_loss 4.1 | num_tokens 12.4 | batch_size 500 | valid_perplexity 60.2
+INFO: Epoch 016: loss 3.571 | lr 0.0005 | num_tokens 12.18 | batch_size 8 | grad_norm 16.25 | clip 1
+INFO: Epoch 016: valid_loss 4.05 | num_tokens 12.4 | batch_size 500 | valid_perplexity 57.5
+INFO: Epoch 017: loss 3.529 | lr 0.0005 | num_tokens 12.18 | batch_size 8 | grad_norm 16.42 | clip 1
+INFO: Epoch 017: valid_loss 4.04 | num_tokens 12.4 | batch_size 500 | valid_perplexity 57
+INFO: Epoch 018: loss 3.49 | lr 0.0005 | num_tokens 12.18 | batch_size 8 | grad_norm 16.64 | clip 1
+INFO: Epoch 018: valid_loss 4.02 | num_tokens 12.4 | batch_size 500 | valid_perplexity 55.6
+INFO: Epoch 019: loss 3.448 | lr 0.0005 | num_tokens 12.18 | batch_size 8 | grad_norm 16.67 | clip 1
+INFO: Epoch 019: valid_loss 4 | num_tokens 12.4 | batch_size 500 | valid_perplexity 54.4
+INFO: Epoch 020: loss 3.416 | lr 0.0005 | num_tokens 12.18 | batch_size 8 | grad_norm 16.85 | clip 1
+INFO: Epoch 020: valid_loss 3.97 | num_tokens 12.4 | batch_size 500 | valid_perplexity 53
+INFO: Epoch 021: loss 3.38 | lr 0.0005 | num_tokens 12.18 | batch_size 8 | grad_norm 17.07 | clip 1
+INFO: Epoch 021: valid_loss 3.96 | num_tokens 12.4 | batch_size 500 | valid_perplexity 52.3
+INFO: Epoch 022: loss 3.343 | lr 0.0005 | num_tokens 12.18 | batch_size 8 | grad_norm 17.2 | clip 1
+INFO: Epoch 022: valid_loss 3.94 | num_tokens 12.4 | batch_size 500 | valid_perplexity 51.2
+INFO: Epoch 023: loss 3.32 | lr 0.0005 | num_tokens 12.18 | batch_size 8 | grad_norm 17.3 | clip 1
+INFO: Epoch 023: valid_loss 3.92 | num_tokens 12.4 | batch_size 500 | valid_perplexity 50.2
+INFO: Epoch 024: loss 3.285 | lr 0.0005 | num_tokens 12.18 | batch_size 8 | grad_norm 17.51 | clip 1
+INFO: Epoch 024: valid_loss 3.91 | num_tokens 12.4 | batch_size 500 | valid_perplexity 49.8
+INFO: Epoch 025: loss 3.256 | lr 0.0005 | num_tokens 12.18 | batch_size 8 | grad_norm 17.51 | clip 1
+INFO: Epoch 025: valid_loss 3.87 | num_tokens 12.4 | batch_size 500 | valid_perplexity 48
+INFO: Epoch 026: loss 3.227 | lr 0.0005 | num_tokens 12.18 | batch_size 8 | grad_norm 17.64 | clip 1
+INFO: Epoch 026: valid_loss 3.87 | num_tokens 12.4 | batch_size 500 | valid_perplexity 47.7
+INFO: Epoch 027: loss 3.198 | lr 0.0005 | num_tokens 12.18 | batch_size 8 | grad_norm 17.84 | clip 1
+INFO: Epoch 027: valid_loss 3.84 | num_tokens 12.4 | batch_size 500 | valid_perplexity 46.5
+INFO: Epoch 028: loss 3.173 | lr 0.0005 | num_tokens 12.18 | batch_size 8 | grad_norm 17.83 | clip 1
+INFO: Epoch 028: valid_loss 3.85 | num_tokens 12.4 | batch_size 500 | valid_perplexity 47
+INFO: Epoch 029: loss 3.145 | lr 0.0005 | num_tokens 12.18 | batch_size 8 | grad_norm 17.92 | clip 1
+INFO: Epoch 029: valid_loss 3.83 | num_tokens 12.4 | batch_size 500 | valid_perplexity 45.8
+INFO: Epoch 030: loss 3.122 | lr 0.0005 | num_tokens 12.18 | batch_size 8 | grad_norm 18.03 | clip 1
+INFO: Epoch 030: valid_loss 3.82 | num_tokens 12.4 | batch_size 500 | valid_perplexity 45.5
+INFO: Epoch 031: loss 3.093 | lr 0.0005 | num_tokens 12.18 | batch_size 8 | grad_norm 18.14 | clip 1
+INFO: Epoch 031: valid_loss 3.8 | num_tokens 12.4 | batch_size 500 | valid_perplexity 44.7
+INFO: Epoch 032: loss 3.068 | lr 0.0005 | num_tokens 12.18 | batch_size 8 | grad_norm 18.3 | clip 1
+INFO: Epoch 032: valid_loss 3.8 | num_tokens 12.4 | batch_size 500 | valid_perplexity 44.8
+INFO: Epoch 033: loss 3.048 | lr 0.0005 | num_tokens 12.18 | batch_size 8 | grad_norm 18.38 | clip 1
+INFO: Epoch 033: valid_loss 3.8 | num_tokens 12.4 | batch_size 500 | valid_perplexity 44.7
+INFO: Epoch 034: loss 3.024 | lr 0.0005 | num_tokens 12.18 | batch_size 8 | grad_norm 18.43 | clip 1
+INFO: Epoch 034: valid_loss 3.79 | num_tokens 12.4 | batch_size 500 | valid_perplexity 44.4
+INFO: Epoch 035: loss 3.002 | lr 0.0005 | num_tokens 12.18 | batch_size 8 | grad_norm 18.5 | clip 1
+INFO: Epoch 035: valid_loss 3.79 | num_tokens 12.4 | batch_size 500 | valid_perplexity 44.3
+INFO: Epoch 036: loss 2.981 | lr 0.0005 | num_tokens 12.18 | batch_size 8 | grad_norm 18.56 | clip 1
+INFO: Epoch 036: valid_loss 3.78 | num_tokens 12.4 | batch_size 500 | valid_perplexity 43.6
+INFO: Epoch 037: loss 2.964 | lr 0.0005 | num_tokens 12.18 | batch_size 8 | grad_norm 18.72 | clip 1
+INFO: Epoch 037: valid_loss 3.77 | num_tokens 12.4 | batch_size 500 | valid_perplexity 43.4
+INFO: Epoch 038: loss 2.941 | lr 0.0005 | num_tokens 12.18 | batch_size 8 | grad_norm 18.75 | clip 1
+INFO: Epoch 038: valid_loss 3.78 | num_tokens 12.4 | batch_size 500 | valid_perplexity 43.9
+INFO: Epoch 039: loss 2.921 | lr 0.0005 | num_tokens 12.18 | batch_size 8 | grad_norm 18.87 | clip 1
+INFO: Epoch 039: valid_loss 3.77 | num_tokens 12.4 | batch_size 500 | valid_perplexity 43.2
+INFO: Epoch 040: loss 2.904 | lr 0.0005 | num_tokens 12.18 | batch_size 8 | grad_norm 18.92 | clip 1
+INFO: Epoch 040: valid_loss 3.76 | num_tokens 12.4 | batch_size 500 | valid_perplexity 42.8
+INFO: Epoch 041: loss 2.885 | lr 0.0005 | num_tokens 12.18 | batch_size 8 | grad_norm 18.95 | clip 1
+INFO: Epoch 041: valid_loss 3.76 | num_tokens 12.4 | batch_size 500 | valid_perplexity 43.2
+INFO: Epoch 042: loss 2.864 | lr 0.0005 | num_tokens 12.18 | batch_size 8 | grad_norm 19.05 | clip 1
+INFO: Epoch 042: valid_loss 3.75 | num_tokens 12.4 | batch_size 500 | valid_perplexity 42.6
+INFO: Epoch 043: loss 2.849 | lr 0.0005 | num_tokens 12.18 | batch_size 8 | grad_norm 19.16 | clip 1
+INFO: Epoch 043: valid_loss 3.74 | num_tokens 12.4 | batch_size 500 | valid_perplexity 42.2
+INFO: Epoch 044: loss 2.83 | lr 0.0005 | num_tokens 12.18 | batch_size 8 | grad_norm 19.11 | clip 1
+INFO: Epoch 044: valid_loss 3.75 | num_tokens 12.4 | batch_size 500 | valid_perplexity 42.4
+INFO: Epoch 045: loss 2.811 | lr 0.0005 | num_tokens 12.18 | batch_size 8 | grad_norm 19.28 | clip 1
+INFO: Epoch 045: valid_loss 3.73 | num_tokens 12.4 | batch_size 500 | valid_perplexity 41.8
+INFO: Epoch 046: loss 2.795 | lr 0.0005 | num_tokens 12.18 | batch_size 8 | grad_norm 19.28 | clip 1
+INFO: Epoch 046: valid_loss 3.73 | num_tokens 12.4 | batch_size 500 | valid_perplexity 41.6
+INFO: Epoch 047: loss 2.779 | lr 0.0005 | num_tokens 12.18 | batch_size 8 | grad_norm 19.43 | clip 1
+INFO: Epoch 047: valid_loss 3.72 | num_tokens 12.4 | batch_size 500 | valid_perplexity 41.5
+INFO: Epoch 048: loss 2.768 | lr 0.0005 | num_tokens 12.18 | batch_size 8 | grad_norm 19.41 | clip 1
+INFO: Epoch 048: valid_loss 3.73 | num_tokens 12.4 | batch_size 500 | valid_perplexity 41.8
+INFO: Epoch 049: loss 2.754 | lr 0.0005 | num_tokens 12.18 | batch_size 8 | grad_norm 19.51 | clip 1
+INFO: Epoch 049: valid_loss 3.72 | num_tokens 12.4 | batch_size 500 | valid_perplexity 41.4
+INFO: Epoch 050: loss 2.731 | lr 0.0005 | num_tokens 12.18 | batch_size 8 | grad_norm 19.55 | clip 1
+INFO: Epoch 050: valid_loss 3.73 | num_tokens 12.4 | batch_size 500 | valid_perplexity 41.6
+INFO: Epoch 051: loss 2.722 | lr 0.0005 | num_tokens 12.18 | batch_size 8 | grad_norm 19.66 | clip 1
+INFO: Epoch 051: valid_loss 3.73 | num_tokens 12.4 | batch_size 500 | valid_perplexity 41.7
+INFO: Epoch 052: loss 2.708 | lr 0.0005 | num_tokens 12.18 | batch_size 8 | grad_norm 19.66 | clip 1
+INFO: Epoch 052: valid_loss 3.71 | num_tokens 12.4 | batch_size 500 | valid_perplexity 40.9
+INFO: Epoch 053: loss 2.693 | lr 0.0005 | num_tokens 12.18 | batch_size 8 | grad_norm 19.75 | clip 1
+INFO: Epoch 053: valid_loss 3.71 | num_tokens 12.4 | batch_size 500 | valid_perplexity 41
+INFO: Epoch 054: loss 2.682 | lr 0.0005 | num_tokens 12.18 | batch_size 8 | grad_norm 19.79 | clip 1
+INFO: Epoch 054: valid_loss 3.71 | num_tokens 12.4 | batch_size 500 | valid_perplexity 40.9
+INFO: Epoch 055: loss 2.666 | lr 0.0005 | num_tokens 12.18 | batch_size 8 | grad_norm 19.82 | clip 1
+INFO: Epoch 055: valid_loss 3.71 | num_tokens 12.4 | batch_size 500 | valid_perplexity 41
+INFO: Epoch 056: loss 2.653 | lr 0.0005 | num_tokens 12.18 | batch_size 8 | grad_norm 19.85 | clip 1
+INFO: Epoch 056: valid_loss 3.72 | num_tokens 12.4 | batch_size 500 | valid_perplexity 41.1
+INFO: Epoch 057: loss 2.636 | lr 0.0005 | num_tokens 12.18 | batch_size 8 | grad_norm 19.85 | clip 1
+INFO: Epoch 057: valid_loss 3.72 | num_tokens 12.4 | batch_size 500 | valid_perplexity 41.1
+INFO: No validation set improvements observed for 3 epochs. Early stop!
+train done!
+[2023-11-02 21:33:37] COMMAND: translate.py --data /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.05/prepared/ --dicts /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.05/prepared/ --checkpoint-path /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.05/checkpoint_last.pt --output /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.05/translated.en.txt
+[2023-11-02 21:33:37] Arguments: {'cuda': False, 'data': '/cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.05/prepared/', 'source_lang': 'fr', 'target_lang': 'en', 'max_tokens': None, 'batch_size': 1, 'train_on_tiny': False, 'arch': 'lstm', 'max_epoch': 10000, 'clip_norm': 4.0, 'lr': 0.0005, 'patience': 3, 'log_file': None, 'save_dir': '/cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.05', 'restore_file': 'checkpoint_last.pt', 'save_interval': 1, 'no_save': False, 'epoch_checkpoints': False, 'encoder_num_layers': 2, 'decoder_num_layers': 2, 'encoder_dropout_in': 0.3, 'encoder_dropout_out': 0.3, 'decoder_dropout_in': 0.3, 'decoder_dropout_out': 0.3, 'encoder_embed_dim': 64, 'encoder_embed_path': None, 'encoder_hidden_size': 64, 'encoder_bidirectional': 'True', 'decoder_embed_dim': 64, 'decoder_embed_path': None, 'decoder_hidden_size': 128, 'decoder_use_attention': 'True', 'decoder_use_lexical_model': 'False', 'device_id': 0, 'seed': 42, 'dicts': '/cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.05/prepared/', 'checkpoint_path': '/cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.05/checkpoint_last.pt', 'output': '/cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.05/translated.en.txt', 'max_len': 128}
+[2023-11-02 21:33:37] Loaded a source dictionary (fr) with 4000 words
+[2023-11-02 21:33:37] Loaded a target dictionary (en) with 4000 words
+[2023-11-02 21:33:37] Loaded a model from checkpoint /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.05/checkpoint_last.pt
+translate done!
+dropout 0.05
+{
+ "name": "BLEU",
+ "score": 8.5,
+ "signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.3.1",
+ "verbose_score": "37.7/12.1/5.3/2.2 (BP = 1.000 ratio = 1.244 hyp_len = 4842 ref_len = 3892)",
+ "nrefs": "1",
+ "case": "mixed",
+ "eff": "no",
+ "tok": "13a",
+ "smooth": "exp",
+ "version": "2.3.1"
+}
+---------------------------------------------
+dropout 0.075
+[2023-11-02 21:55:38] COMMAND: bpe-preprocess.py --target-lang en --source-lang fr --dest-dir /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.075/prepared/ --train-prefix /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.075/preprocessed/train --valid-prefix /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.075/preprocessed/valid --test-prefix /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.075/preprocessed/test --tiny-train-prefix /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.075/preprocessed/tiny_train --threshold-src 1 --threshold-tgt 1 --num-words-src 4000 --num-words-tgt 4000 --bpe-dropout 0.075
+[2023-11-02 21:55:38] Arguments: {'source_lang': 'fr', 'target_lang': 'en', 'train_prefix': '/cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.075/preprocessed/train', 'tiny_train_prefix': '/cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.075/preprocessed/tiny_train', 'valid_prefix': '/cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.075/preprocessed/valid', 'test_prefix': '/cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.075/preprocessed/test', 'dest_dir': '/cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.075/prepared/', 'threshold_src': 1, 'num_words_src': 4000, 'threshold_tgt': 1, 'num_words_tgt': 4000, 'vocab_src': None, 'vocab_trg': None, 'quiet': False, 'bpe_dropout': 0.075}
+[2023-11-02 21:55:38] COMMAND: bpe-preprocess.py --target-lang en --source-lang fr --dest-dir /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.075/prepared/ --train-prefix /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.075/preprocessed/train --valid-prefix /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.075/preprocessed/valid --test-prefix /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.075/preprocessed/test --tiny-train-prefix /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.075/preprocessed/tiny_train --threshold-src 1 --threshold-tgt 1 --num-words-src 4000 --num-words-tgt 4000 --bpe-dropout 0.075
+[2023-11-02 21:55:38] Arguments: {'source_lang': 'fr', 'target_lang': 'en', 'train_prefix': '/cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.075/preprocessed/train', 'tiny_train_prefix': '/cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.075/preprocessed/tiny_train', 'valid_prefix': '/cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.075/preprocessed/valid', 'test_prefix': '/cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.075/preprocessed/test', 'dest_dir': '/cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.075/prepared/', 'threshold_src': 1, 'num_words_src': 4000, 'threshold_tgt': 1, 'num_words_tgt': 4000, 'vocab_src': None, 'vocab_trg': None, 'quiet': False, 'bpe_dropout': 0.075}
+[2023-11-02 21:56:24] Built a source dictionary (fr) with 4000 words
+[2023-11-02 21:56:58] Built a target dictionary (en) with 4000 words
+[2023-11-02 21:58:26] Built a binary dataset for /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.075/preprocessed/train.fr: 10000 sentences, 156159 tokens, 0.002% replaced by unknown token
+[2023-11-02 21:58:35] Built a binary dataset for /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.075/preprocessed/tiny_train.fr: 1000 sentences, 15888 tokens, 0.000% replaced by unknown token
+[2023-11-02 21:58:40] Built a binary dataset for /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.075/preprocessed/valid.fr: 500 sentences, 7796 tokens, 0.000% replaced by unknown token
+[2023-11-02 21:58:44] Built a binary dataset for /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.075/preprocessed/test.fr: 500 sentences, 7832 tokens, 0.013% replaced by unknown token
+[2023-11-02 22:00:04] Built a binary dataset for /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.075/preprocessed/train.en: 10000 sentences, 132884 tokens, 0.002% replaced by unknown token
+[2023-11-02 22:00:12] Built a binary dataset for /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.075/preprocessed/tiny_train.en: 1000 sentences, 13442 tokens, 0.015% replaced by unknown token
+[2023-11-02 22:00:15] Built a binary dataset for /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.075/preprocessed/valid.en: 500 sentences, 6591 tokens, 0.000% replaced by unknown token
+[2023-11-02 22:00:19] Built a binary dataset for /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.075/preprocessed/test.en: 500 sentences, 6797 tokens, 0.029% replaced by unknown token
+preprocess done!
+INFO: Commencing training!
+INFO: COMMAND: train.py --data /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.075/prepared/ --source-lang fr --target-lang en --save-dir /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.075 --lr 0.0005 --batch-size 8 --encoder-num-layers 2 --decoder-num-layers 2 --encoder-dropout-in 0.3 --encoder-dropout-out 0.3 --decoder-dropout-in 0.3 --decoder-dropout-out 0.3
+INFO: Arguments: {'cuda': False, 'data': '/cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.075/prepared/', 'source_lang': 'fr', 'target_lang': 'en', 'max_tokens': None, 'batch_size': 8, 'train_on_tiny': False, 'arch': 'lstm', 'max_epoch': 10000, 'clip_norm': 4.0, 'lr': 0.0005, 'patience': 3, 'log_file': None, 'save_dir': '/cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.075', 'restore_file': 'checkpoint_last.pt', 'save_interval': 1, 'no_save': False, 'epoch_checkpoints': False, 'encoder_num_layers': 2, 'decoder_num_layers': 2, 'encoder_dropout_in': 0.3, 'encoder_dropout_out': 0.3, 'decoder_dropout_in': 0.3, 'decoder_dropout_out': 0.3, 'encoder_embed_dim': 64, 'encoder_embed_path': None, 'encoder_hidden_size': 64, 'encoder_bidirectional': 'True', 'decoder_embed_dim': 64, 'decoder_embed_path': None, 'decoder_hidden_size': 128, 'decoder_use_attention': 'True', 'decoder_use_lexical_model': 'False', 'device_id': 0}
+INFO: Loaded a source dictionary (fr) with 4000 words
+INFO: Loaded a target dictionary (en) with 4000 words
+INFO: Built a model with 1540000 parameters
+INFO: Epoch 000: loss 5.79 | lr 0.0005 | num_tokens 13.29 | batch_size 8 | grad_norm 12.55 | clip 0.9848
+INFO: Epoch 000: valid_loss 5.73 | num_tokens 13.2 | batch_size 500 | valid_perplexity 308
+INFO: Epoch 001: loss 5.2 | lr 0.0005 | num_tokens 13.29 | batch_size 8 | grad_norm 10.72 | clip 1
+INFO: Epoch 001: valid_loss 5.33 | num_tokens 13.2 | batch_size 500 | valid_perplexity 206
+INFO: Epoch 002: loss 4.894 | lr 0.0005 | num_tokens 13.29 | batch_size 8 | grad_norm 11.82 | clip 1
+INFO: Epoch 002: valid_loss 5.12 | num_tokens 13.2 | batch_size 500 | valid_perplexity 168
+INFO: Epoch 003: loss 4.663 | lr 0.0005 | num_tokens 13.29 | batch_size 8 | grad_norm 12.65 | clip 1
+INFO: Epoch 003: valid_loss 4.91 | num_tokens 13.2 | batch_size 500 | valid_perplexity 136
+INFO: Epoch 004: loss 4.496 | lr 0.0005 | num_tokens 13.29 | batch_size 8 | grad_norm 13.2 | clip 1
+INFO: Epoch 004: valid_loss 4.78 | num_tokens 13.2 | batch_size 500 | valid_perplexity 119
+INFO: Epoch 005: loss 4.372 | lr 0.0005 | num_tokens 13.29 | batch_size 8 | grad_norm 13.63 | clip 1
+INFO: Epoch 005: valid_loss 4.7 | num_tokens 13.2 | batch_size 500 | valid_perplexity 109
+INFO: Epoch 006: loss 4.261 | lr 0.0005 | num_tokens 13.29 | batch_size 8 | grad_norm 13.96 | clip 1
+INFO: Epoch 006: valid_loss 4.56 | num_tokens 13.2 | batch_size 500 | valid_perplexity 95.2
+INFO: Epoch 007: loss 4.171 | lr 0.0005 | num_tokens 13.29 | batch_size 8 | grad_norm 14.28 | clip 1
+INFO: Epoch 007: valid_loss 4.48 | num_tokens 13.2 | batch_size 500 | valid_perplexity 88
+INFO: Epoch 008: loss 4.087 | lr 0.0005 | num_tokens 13.29 | batch_size 8 | grad_norm 14.56 | clip 1
+INFO: Epoch 008: valid_loss 4.43 | num_tokens 13.2 | batch_size 500 | valid_perplexity 83.6
+INFO: Epoch 009: loss 4.018 | lr 0.0005 | num_tokens 13.29 | batch_size 8 | grad_norm 14.89 | clip 1
+INFO: Epoch 009: valid_loss 4.34 | num_tokens 13.2 | batch_size 500 | valid_perplexity 77
+INFO: Epoch 010: loss 3.951 | lr 0.0005 | num_tokens 13.29 | batch_size 8 | grad_norm 15.16 | clip 1
+INFO: Epoch 010: valid_loss 4.3 | num_tokens 13.2 | batch_size 500 | valid_perplexity 73.7
+INFO: Epoch 011: loss 3.892 | lr 0.0005 | num_tokens 13.29 | batch_size 8 | grad_norm 15.33 | clip 1
+INFO: Epoch 011: valid_loss 4.25 | num_tokens 13.2 | batch_size 500 | valid_perplexity 70.2
+INFO: Epoch 012: loss 3.84 | lr 0.0005 | num_tokens 13.29 | batch_size 8 | grad_norm 15.61 | clip 1
+INFO: Epoch 012: valid_loss 4.21 | num_tokens 13.2 | batch_size 500 | valid_perplexity 67.2
+INFO: Epoch 013: loss 3.786 | lr 0.0005 | num_tokens 13.29 | batch_size 8 | grad_norm 15.75 | clip 1
+INFO: Epoch 013: valid_loss 4.16 | num_tokens 13.2 | batch_size 500 | valid_perplexity 63.9
+INFO: Epoch 014: loss 3.741 | lr 0.0005 | num_tokens 13.29 | batch_size 8 | grad_norm 15.98 | clip 1
+INFO: Epoch 014: valid_loss 4.13 | num_tokens 13.2 | batch_size 500 | valid_perplexity 62.3
+INFO: Epoch 015: loss 3.69 | lr 0.0005 | num_tokens 13.29 | batch_size 8 | grad_norm 16.15 | clip 1
+INFO: Epoch 015: valid_loss 4.11 | num_tokens 13.2 | batch_size 500 | valid_perplexity 61.2
+INFO: Epoch 016: loss 3.65 | lr 0.0005 | num_tokens 13.29 | batch_size 8 | grad_norm 16.45 | clip 1
+INFO: Epoch 016: valid_loss 4.1 | num_tokens 13.2 | batch_size 500 | valid_perplexity 60.3
+INFO: Epoch 017: loss 3.611 | lr 0.0005 | num_tokens 13.29 | batch_size 8 | grad_norm 16.57 | clip 1
+INFO: Epoch 017: valid_loss 4.03 | num_tokens 13.2 | batch_size 500 | valid_perplexity 56.5
+INFO: Epoch 018: loss 3.572 | lr 0.0005 | num_tokens 13.29 | batch_size 8 | grad_norm 16.71 | clip 1
+INFO: Epoch 018: valid_loss 4.02 | num_tokens 13.2 | batch_size 500 | valid_perplexity 55.9
+INFO: Epoch 019: loss 3.536 | lr 0.0005 | num_tokens 13.29 | batch_size 8 | grad_norm 16.84 | clip 1
+INFO: Epoch 019: valid_loss 4.01 | num_tokens 13.2 | batch_size 500 | valid_perplexity 55.2
+INFO: Epoch 020: loss 3.506 | lr 0.0005 | num_tokens 13.29 | batch_size 8 | grad_norm 17 | clip 1
+INFO: Epoch 020: valid_loss 3.97 | num_tokens 13.2 | batch_size 500 | valid_perplexity 53.2
+INFO: Epoch 021: loss 3.47 | lr 0.0005 | num_tokens 13.29 | batch_size 8 | grad_norm 17.14 | clip 1
+INFO: Epoch 021: valid_loss 3.95 | num_tokens 13.2 | batch_size 500 | valid_perplexity 52.1
+INFO: Epoch 022: loss 3.439 | lr 0.0005 | num_tokens 13.29 | batch_size 8 | grad_norm 17.32 | clip 1
+INFO: Epoch 022: valid_loss 3.95 | num_tokens 13.2 | batch_size 500 | valid_perplexity 51.9
+INFO: Epoch 023: loss 3.407 | lr 0.0005 | num_tokens 13.29 | batch_size 8 | grad_norm 17.49 | clip 1
+INFO: Epoch 023: valid_loss 3.92 | num_tokens 13.2 | batch_size 500 | valid_perplexity 50.5
+INFO: Epoch 024: loss 3.378 | lr 0.0005 | num_tokens 13.29 | batch_size 8 | grad_norm 17.56 | clip 1
+INFO: Epoch 024: valid_loss 3.88 | num_tokens 13.2 | batch_size 500 | valid_perplexity 48.6
+INFO: Epoch 025: loss 3.35 | lr 0.0005 | num_tokens 13.29 | batch_size 8 | grad_norm 17.71 | clip 1
+INFO: Epoch 025: valid_loss 3.9 | num_tokens 13.2 | batch_size 500 | valid_perplexity 49.4
+INFO: Epoch 026: loss 3.321 | lr 0.0005 | num_tokens 13.29 | batch_size 8 | grad_norm 17.85 | clip 1
+INFO: Epoch 026: valid_loss 3.87 | num_tokens 13.2 | batch_size 500 | valid_perplexity 48
+INFO: Epoch 027: loss 3.298 | lr 0.0005 | num_tokens 13.29 | batch_size 8 | grad_norm 18.06 | clip 1
+INFO: Epoch 027: valid_loss 3.86 | num_tokens 13.2 | batch_size 500 | valid_perplexity 47.7
+INFO: Epoch 028: loss 3.272 | lr 0.0005 | num_tokens 13.29 | batch_size 8 | grad_norm 18.16 | clip 1
+INFO: Epoch 028: valid_loss 3.85 | num_tokens 13.2 | batch_size 500 | valid_perplexity 46.9
+INFO: Epoch 029: loss 3.25 | lr 0.0005 | num_tokens 13.29 | batch_size 8 | grad_norm 18.36 | clip 1
+INFO: Epoch 029: valid_loss 3.83 | num_tokens 13.2 | batch_size 500 | valid_perplexity 46.2
+INFO: Epoch 030: loss 3.224 | lr 0.0005 | num_tokens 13.29 | batch_size 8 | grad_norm 18.34 | clip 1
+INFO: Epoch 030: valid_loss 3.82 | num_tokens 13.2 | batch_size 500 | valid_perplexity 45.5
+INFO: Epoch 031: loss 3.196 | lr 0.0005 | num_tokens 13.29 | batch_size 8 | grad_norm 18.44 | clip 1
+INFO: Epoch 031: valid_loss 3.81 | num_tokens 13.2 | batch_size 500 | valid_perplexity 45.2
+INFO: Epoch 032: loss 3.174 | lr 0.0005 | num_tokens 13.29 | batch_size 8 | grad_norm 18.61 | clip 1
+INFO: Epoch 032: valid_loss 3.82 | num_tokens 13.2 | batch_size 500 | valid_perplexity 45.4
+INFO: Epoch 033: loss 3.152 | lr 0.0005 | num_tokens 13.29 | batch_size 8 | grad_norm 18.71 | clip 1
+INFO: Epoch 033: valid_loss 3.8 | num_tokens 13.2 | batch_size 500 | valid_perplexity 44.6
+INFO: Epoch 034: loss 3.133 | lr 0.0005 | num_tokens 13.29 | batch_size 8 | grad_norm 18.75 | clip 1
+INFO: Epoch 034: valid_loss 3.78 | num_tokens 13.2 | batch_size 500 | valid_perplexity 44
+INFO: Epoch 035: loss 3.114 | lr 0.0005 | num_tokens 13.29 | batch_size 8 | grad_norm 18.82 | clip 1
+INFO: Epoch 035: valid_loss 3.79 | num_tokens 13.2 | batch_size 500 | valid_perplexity 44
+INFO: Epoch 036: loss 3.097 | lr 0.0005 | num_tokens 13.29 | batch_size 8 | grad_norm 18.87 | clip 1
+INFO: Epoch 036: valid_loss 3.77 | num_tokens 13.2 | batch_size 500 | valid_perplexity 43.5
+INFO: Epoch 037: loss 3.075 | lr 0.0005 | num_tokens 13.29 | batch_size 8 | grad_norm 19.06 | clip 1
+INFO: Epoch 037: valid_loss 3.76 | num_tokens 13.2 | batch_size 500 | valid_perplexity 42.9
+INFO: Epoch 038: loss 3.053 | lr 0.0005 | num_tokens 13.29 | batch_size 8 | grad_norm 19.14 | clip 1
+INFO: Epoch 038: valid_loss 3.76 | num_tokens 13.2 | batch_size 500 | valid_perplexity 42.8
+INFO: Epoch 039: loss 3.036 | lr 0.0005 | num_tokens 13.29 | batch_size 8 | grad_norm 19.17 | clip 1
+INFO: Epoch 039: valid_loss 3.76 | num_tokens 13.2 | batch_size 500 | valid_perplexity 43.1
+INFO: Epoch 040: loss 3.017 | lr 0.0005 | num_tokens 13.29 | batch_size 8 | grad_norm 19.33 | clip 1
+INFO: Epoch 040: valid_loss 3.74 | num_tokens 13.2 | batch_size 500 | valid_perplexity 42.2
+INFO: Epoch 041: loss 3.004 | lr 0.0005 | num_tokens 13.29 | batch_size 8 | grad_norm 19.38 | clip 1
+INFO: Epoch 041: valid_loss 3.75 | num_tokens 13.2 | batch_size 500 | valid_perplexity 42.5
+INFO: Epoch 042: loss 2.983 | lr 0.0005 | num_tokens 13.29 | batch_size 8 | grad_norm 19.52 | clip 1
+INFO: Epoch 042: valid_loss 3.74 | num_tokens 13.2 | batch_size 500 | valid_perplexity 42.2
+INFO: Epoch 043: loss 2.966 | lr 0.0005 | num_tokens 13.29 | batch_size 8 | grad_norm 19.44 | clip 1
+INFO: Epoch 043: valid_loss 3.74 | num_tokens 13.2 | batch_size 500 | valid_perplexity 42
+INFO: Epoch 044: loss 2.955 | lr 0.0005 | num_tokens 13.29 | batch_size 8 | grad_norm 19.56 | clip 1
+INFO: Epoch 044: valid_loss 3.73 | num_tokens 13.2 | batch_size 500 | valid_perplexity 41.7
+INFO: Epoch 045: loss 2.941 | lr 0.0005 | num_tokens 13.29 | batch_size 8 | grad_norm 19.65 | clip 1
+INFO: Epoch 045: valid_loss 3.73 | num_tokens 13.2 | batch_size 500 | valid_perplexity 41.5
+INFO: Epoch 046: loss 2.923 | lr 0.0005 | num_tokens 13.29 | batch_size 8 | grad_norm 19.71 | clip 1
+INFO: Epoch 046: valid_loss 3.74 | num_tokens 13.2 | batch_size 500 | valid_perplexity 42.1
+INFO: Epoch 047: loss 2.906 | lr 0.0005 | num_tokens 13.29 | batch_size 8 | grad_norm 19.73 | clip 1
+INFO: Epoch 047: valid_loss 3.73 | num_tokens 13.2 | batch_size 500 | valid_perplexity 41.6
+INFO: Epoch 048: loss 2.889 | lr 0.0005 | num_tokens 13.29 | batch_size 8 | grad_norm 19.75 | clip 1
+INFO: Epoch 048: valid_loss 3.72 | num_tokens 13.2 | batch_size 500 | valid_perplexity 41.4
+INFO: Epoch 049: loss 2.874 | lr 0.0005 | num_tokens 13.29 | batch_size 8 | grad_norm 19.84 | clip 1
+INFO: Epoch 049: valid_loss 3.7 | num_tokens 13.2 | batch_size 500 | valid_perplexity 40.3
+INFO: Epoch 050: loss 2.859 | lr 0.0005 | num_tokens 13.29 | batch_size 8 | grad_norm 19.97 | clip 1
+INFO: Epoch 050: valid_loss 3.72 | num_tokens 13.2 | batch_size 500 | valid_perplexity 41.1
+INFO: Epoch 051: loss 2.849 | lr 0.0005 | num_tokens 13.29 | batch_size 8 | grad_norm 20 | clip 1
+INFO: Epoch 051: valid_loss 3.7 | num_tokens 13.2 | batch_size 500 | valid_perplexity 40.6
+INFO: Epoch 052: loss 2.832 | lr 0.0005 | num_tokens 13.29 | batch_size 8 | grad_norm 19.98 | clip 1
+INFO: Epoch 052: valid_loss 3.69 | num_tokens 13.2 | batch_size 500 | valid_perplexity 40.2
+INFO: Epoch 053: loss 2.823 | lr 0.0005 | num_tokens 13.29 | batch_size 8 | grad_norm 20.1 | clip 1
+INFO: Epoch 053: valid_loss 3.69 | num_tokens 13.2 | batch_size 500 | valid_perplexity 40
+INFO: Epoch 054: loss 2.804 | lr 0.0005 | num_tokens 13.29 | batch_size 8 | grad_norm 20.14 | clip 1
+INFO: Epoch 054: valid_loss 3.7 | num_tokens 13.2 | batch_size 500 | valid_perplexity 40.4
+INFO: Epoch 055: loss 2.792 | lr 0.0005 | num_tokens 13.29 | batch_size 8 | grad_norm 20.2 | clip 1
+INFO: Epoch 055: valid_loss 3.7 | num_tokens 13.2 | batch_size 500 | valid_perplexity 40.5
+INFO: Epoch 056: loss 2.782 | lr 0.0005 | num_tokens 13.29 | batch_size 8 | grad_norm 20.31 | clip 1
+INFO: Epoch 056: valid_loss 3.69 | num_tokens 13.2 | batch_size 500 | valid_perplexity 40.2
+INFO: No validation set improvements observed for 3 epochs. Early stop!
+train done!
+[2023-11-02 23:11:39] COMMAND: translate.py --data /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.075/prepared/ --dicts /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.075/prepared/ --checkpoint-path /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.075/checkpoint_last.pt --output /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.075/translated.en.txt
+[2023-11-02 23:11:39] Arguments: {'cuda': False, 'data': '/cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.075/prepared/', 'source_lang': 'fr', 'target_lang': 'en', 'max_tokens': None, 'batch_size': 1, 'train_on_tiny': False, 'arch': 'lstm', 'max_epoch': 10000, 'clip_norm': 4.0, 'lr': 0.0005, 'patience': 3, 'log_file': None, 'save_dir': '/cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.075', 'restore_file': 'checkpoint_last.pt', 'save_interval': 1, 'no_save': False, 'epoch_checkpoints': False, 'encoder_num_layers': 2, 'decoder_num_layers': 2, 'encoder_dropout_in': 0.3, 'encoder_dropout_out': 0.3, 'decoder_dropout_in': 0.3, 'decoder_dropout_out': 0.3, 'encoder_embed_dim': 64, 'encoder_embed_path': None, 'encoder_hidden_size': 64, 'encoder_bidirectional': 'True', 'decoder_embed_dim': 64, 'decoder_embed_path': None, 'decoder_hidden_size': 128, 'decoder_use_attention': 'True', 'decoder_use_lexical_model': 'False', 'device_id': 0, 'seed': 42, 'dicts': '/cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.075/prepared/', 'checkpoint_path': '/cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.075/checkpoint_last.pt', 'output': '/cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.075/translated.en.txt', 'max_len': 128}
+[2023-11-02 23:11:39] Loaded a source dictionary (fr) with 4000 words
+[2023-11-02 23:11:39] Loaded a target dictionary (en) with 4000 words
+[2023-11-02 23:11:39] Loaded a model from checkpoint /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.075/checkpoint_last.pt
+translate done!
+dropout 0.075
+{
+ "name": "BLEU",
+ "score": 5.8,
+ "signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.3.1",
+ "verbose_score": "33.0/8.8/3.3/1.2 (BP = 1.000 ratio = 1.327 hyp_len = 5165 ref_len = 3892)",
+ "nrefs": "1",
+ "case": "mixed",
+ "eff": "no",
+ "tok": "13a",
+ "smooth": "exp",
+ "version": "2.3.1"
+}
+---------------------------------------------
+dropout 0.1
+[2023-11-02 23:33:38] COMMAND: bpe-preprocess.py --target-lang en --source-lang fr --dest-dir /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.1/prepared/ --train-prefix /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.1/preprocessed/train --valid-prefix /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.1/preprocessed/valid --test-prefix /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.1/preprocessed/test --tiny-train-prefix /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.1/preprocessed/tiny_train --threshold-src 1 --threshold-tgt 1 --num-words-src 4000 --num-words-tgt 4000 --bpe-dropout 0.1
+[2023-11-02 23:33:38] Arguments: {'source_lang': 'fr', 'target_lang': 'en', 'train_prefix': '/cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.1/preprocessed/train', 'tiny_train_prefix': '/cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.1/preprocessed/tiny_train', 'valid_prefix': '/cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.1/preprocessed/valid', 'test_prefix': '/cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.1/preprocessed/test', 'dest_dir': '/cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.1/prepared/', 'threshold_src': 1, 'num_words_src': 4000, 'threshold_tgt': 1, 'num_words_tgt': 4000, 'vocab_src': None, 'vocab_trg': None, 'quiet': False, 'bpe_dropout': 0.1}
+[2023-11-02 23:33:38] COMMAND: bpe-preprocess.py --target-lang en --source-lang fr --dest-dir /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.1/prepared/ --train-prefix /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.1/preprocessed/train --valid-prefix /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.1/preprocessed/valid --test-prefix /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.1/preprocessed/test --tiny-train-prefix /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.1/preprocessed/tiny_train --threshold-src 1 --threshold-tgt 1 --num-words-src 4000 --num-words-tgt 4000 --bpe-dropout 0.1
+[2023-11-02 23:33:38] Arguments: {'source_lang': 'fr', 'target_lang': 'en', 'train_prefix': '/cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.1/preprocessed/train', 'tiny_train_prefix': '/cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.1/preprocessed/tiny_train', 'valid_prefix': '/cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.1/preprocessed/valid', 'test_prefix': '/cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.1/preprocessed/test', 'dest_dir': '/cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.1/prepared/', 'threshold_src': 1, 'num_words_src': 4000, 'threshold_tgt': 1, 'num_words_tgt': 4000, 'vocab_src': None, 'vocab_trg': None, 'quiet': False, 'bpe_dropout': 0.1}
+[2023-11-02 23:34:23] Built a source dictionary (fr) with 4000 words
+[2023-11-02 23:34:57] Built a target dictionary (en) with 4000 words
+[2023-11-02 23:36:26] Built a binary dataset for /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.1/preprocessed/train.fr: 10000 sentences, 168854 tokens, 0.002% replaced by unknown token
+[2023-11-02 23:36:35] Built a binary dataset for /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.1/preprocessed/tiny_train.fr: 1000 sentences, 16933 tokens, 0.000% replaced by unknown token
+[2023-11-02 23:36:39] Built a binary dataset for /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.1/preprocessed/valid.fr: 500 sentences, 8470 tokens, 0.000% replaced by unknown token
+[2023-11-02 23:36:44] Built a binary dataset for /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.1/preprocessed/test.fr: 500 sentences, 8508 tokens, 0.012% replaced by unknown token
+[2023-11-02 23:38:04] Built a binary dataset for /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.1/preprocessed/train.en: 10000 sentences, 142733 tokens, 0.002% replaced by unknown token
+[2023-11-02 23:38:12] Built a binary dataset for /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.1/preprocessed/tiny_train.en: 1000 sentences, 14362 tokens, 0.014% replaced by unknown token
+[2023-11-02 23:38:16] Built a binary dataset for /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.1/preprocessed/valid.en: 500 sentences, 7121 tokens, 0.000% replaced by unknown token
+[2023-11-02 23:38:20] Built a binary dataset for /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.1/preprocessed/test.en: 500 sentences, 7176 tokens, 0.028% replaced by unknown token
+preprocess done!
+INFO: Commencing training!
+INFO: COMMAND: train.py --data /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.1/prepared/ --source-lang fr --target-lang en --save-dir /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.1 --lr 0.0005 --batch-size 8 --encoder-num-layers 2 --decoder-num-layers 2 --encoder-dropout-in 0.3 --encoder-dropout-out 0.3 --decoder-dropout-in 0.3 --decoder-dropout-out 0.3
+INFO: Arguments: {'cuda': False, 'data': '/cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.1/prepared/', 'source_lang': 'fr', 'target_lang': 'en', 'max_tokens': None, 'batch_size': 8, 'train_on_tiny': False, 'arch': 'lstm', 'max_epoch': 10000, 'clip_norm': 4.0, 'lr': 0.0005, 'patience': 3, 'log_file': None, 'save_dir': '/cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.1', 'restore_file': 'checkpoint_last.pt', 'save_interval': 1, 'no_save': False, 'epoch_checkpoints': False, 'encoder_num_layers': 2, 'decoder_num_layers': 2, 'encoder_dropout_in': 0.3, 'encoder_dropout_out': 0.3, 'decoder_dropout_in': 0.3, 'decoder_dropout_out': 0.3, 'encoder_embed_dim': 64, 'encoder_embed_path': None, 'encoder_hidden_size': 64, 'encoder_bidirectional': 'True', 'decoder_embed_dim': 64, 'decoder_embed_path': None, 'decoder_hidden_size': 128, 'decoder_use_attention': 'True', 'decoder_use_lexical_model': 'False', 'device_id': 0}
+INFO: Loaded a source dictionary (fr) with 4000 words
+INFO: Loaded a target dictionary (en) with 4000 words
+INFO: Built a model with 1540000 parameters
+INFO: Epoch 000: loss 5.743 | lr 0.0005 | num_tokens 14.27 | batch_size 8 | grad_norm 13.42 | clip 0.9856
+INFO: Epoch 000: valid_loss 5.72 | num_tokens 14.2 | batch_size 500 | valid_perplexity 305
+INFO: Epoch 001: loss 5.165 | lr 0.0005 | num_tokens 14.27 | batch_size 8 | grad_norm 11.28 | clip 1
+INFO: Epoch 001: valid_loss 5.2 | num_tokens 14.2 | batch_size 500 | valid_perplexity 181
+INFO: Epoch 002: loss 4.84 | lr 0.0005 | num_tokens 14.27 | batch_size 8 | grad_norm 12.24 | clip 1
+INFO: Epoch 002: valid_loss 4.94 | num_tokens 14.2 | batch_size 500 | valid_perplexity 139
+INFO: Epoch 003: loss 4.641 | lr 0.0005 | num_tokens 14.27 | batch_size 8 | grad_norm 12.99 | clip 1
+INFO: Epoch 003: valid_loss 4.8 | num_tokens 14.2 | batch_size 500 | valid_perplexity 122
+INFO: Epoch 004: loss 4.49 | lr 0.0005 | num_tokens 14.27 | batch_size 8 | grad_norm 13.52 | clip 1
+INFO: Epoch 004: valid_loss 4.68 | num_tokens 14.2 | batch_size 500 | valid_perplexity 108
+INFO: Epoch 005: loss 4.37 | lr 0.0005 | num_tokens 14.27 | batch_size 8 | grad_norm 13.9 | clip 1
+INFO: Epoch 005: valid_loss 4.61 | num_tokens 14.2 | batch_size 500 | valid_perplexity 100
+INFO: Epoch 006: loss 4.267 | lr 0.0005 | num_tokens 14.27 | batch_size 8 | grad_norm 14.25 | clip 1
+INFO: Epoch 006: valid_loss 4.52 | num_tokens 14.2 | batch_size 500 | valid_perplexity 91.6
+INFO: Epoch 007: loss 4.181 | lr 0.0005 | num_tokens 14.27 | batch_size 8 | grad_norm 14.69 | clip 1
+INFO: Epoch 007: valid_loss 4.44 | num_tokens 14.2 | batch_size 500 | valid_perplexity 84.4
+INFO: Epoch 008: loss 4.102 | lr 0.0005 | num_tokens 14.27 | batch_size 8 | grad_norm 14.96 | clip 1
+INFO: Epoch 008: valid_loss 4.37 | num_tokens 14.2 | batch_size 500 | valid_perplexity 79.1
+INFO: Epoch 009: loss 4.032 | lr 0.0005 | num_tokens 14.27 | batch_size 8 | grad_norm 15.24 | clip 1
+INFO: Epoch 009: valid_loss 4.3 | num_tokens 14.2 | batch_size 500 | valid_perplexity 73.9
+INFO: Epoch 010: loss 3.966 | lr 0.0005 | num_tokens 14.27 | batch_size 8 | grad_norm 15.56 | clip 1
+INFO: Epoch 010: valid_loss 4.22 | num_tokens 14.2 | batch_size 500 | valid_perplexity 68
+INFO: Epoch 011: loss 3.906 | lr 0.0005 | num_tokens 14.27 | batch_size 8 | grad_norm 15.76 | clip 1
+INFO: Epoch 011: valid_loss 4.18 | num_tokens 14.2 | batch_size 500 | valid_perplexity 65.3
+INFO: Epoch 012: loss 3.85 | lr 0.0005 | num_tokens 14.27 | batch_size 8 | grad_norm 15.97 | clip 1
+INFO: Epoch 012: valid_loss 4.14 | num_tokens 14.2 | batch_size 500 | valid_perplexity 62.9
+INFO: Epoch 013: loss 3.8 | lr 0.0005 | num_tokens 14.27 | batch_size 8 | grad_norm 16.18 | clip 1
+INFO: Epoch 013: valid_loss 4.11 | num_tokens 14.2 | batch_size 500 | valid_perplexity 61.3
+INFO: Epoch 014: loss 3.752 | lr 0.0005 | num_tokens 14.27 | batch_size 8 | grad_norm 16.42 | clip 1
+INFO: Epoch 014: valid_loss 4.06 | num_tokens 14.2 | batch_size 500 | valid_perplexity 58.1
+INFO: Epoch 015: loss 3.704 | lr 0.0005 | num_tokens 14.27 | batch_size 8 | grad_norm 16.61 | clip 1
+INFO: Epoch 015: valid_loss 4.03 | num_tokens 14.2 | batch_size 500 | valid_perplexity 56
+INFO: Epoch 016: loss 3.665 | lr 0.0005 | num_tokens 14.27 | batch_size 8 | grad_norm 16.8 | clip 1
+INFO: Epoch 016: valid_loss 4.01 | num_tokens 14.2 | batch_size 500 | valid_perplexity 54.9
+INFO: Epoch 017: loss 3.623 | lr 0.0005 | num_tokens 14.27 | batch_size 8 | grad_norm 16.98 | clip 1
+INFO: Epoch 017: valid_loss 3.98 | num_tokens 14.2 | batch_size 500 | valid_perplexity 53.8
+INFO: Epoch 018: loss 3.586 | lr 0.0005 | num_tokens 14.27 | batch_size 8 | grad_norm 17.15 | clip 1
+INFO: Epoch 018: valid_loss 3.95 | num_tokens 14.2 | batch_size 500 | valid_perplexity 51.7
+INFO: Epoch 019: loss 3.552 | lr 0.0005 | num_tokens 14.27 | batch_size 8 | grad_norm 17.3 | clip 1
+INFO: Epoch 019: valid_loss 3.93 | num_tokens 14.2 | batch_size 500 | valid_perplexity 50.7
+INFO: Epoch 020: loss 3.518 | lr 0.0005 | num_tokens 14.27 | batch_size 8 | grad_norm 17.48 | clip 1
+INFO: Epoch 020: valid_loss 3.91 | num_tokens 14.2 | batch_size 500 | valid_perplexity 49.8
+INFO: Epoch 021: loss 3.489 | lr 0.0005 | num_tokens 14.27 | batch_size 8 | grad_norm 17.73 | clip 1
+INFO: Epoch 021: valid_loss 3.88 | num_tokens 14.2 | batch_size 500 | valid_perplexity 48.4
+INFO: Epoch 022: loss 3.461 | lr 0.0005 | num_tokens 14.27 | batch_size 8 | grad_norm 17.8 | clip 1
+INFO: Epoch 022: valid_loss 3.87 | num_tokens 14.2 | batch_size 500 | valid_perplexity 48.1
+INFO: Epoch 023: loss 3.43 | lr 0.0005 | num_tokens 14.27 | batch_size 8 | grad_norm 17.87 | clip 1
+INFO: Epoch 023: valid_loss 3.86 | num_tokens 14.2 | batch_size 500 | valid_perplexity 47.3
+INFO: Epoch 024: loss 3.404 | lr 0.0005 | num_tokens 14.27 | batch_size 8 | grad_norm 18.06 | clip 1
+INFO: Epoch 024: valid_loss 3.83 | num_tokens 14.2 | batch_size 500 | valid_perplexity 46.2
+INFO: Epoch 025: loss 3.378 | lr 0.0005 | num_tokens 14.27 | batch_size 8 | grad_norm 18.16 | clip 1
+INFO: Epoch 025: valid_loss 3.84 | num_tokens 14.2 | batch_size 500 | valid_perplexity 46.4
+INFO: Epoch 026: loss 3.348 | lr 0.0005 | num_tokens 14.27 | batch_size 8 | grad_norm 18.27 | clip 1
+INFO: Epoch 026: valid_loss 3.81 | num_tokens 14.2 | batch_size 500 | valid_perplexity 45.1
+INFO: Epoch 027: loss 3.323 | lr 0.0005 | num_tokens 14.27 | batch_size 8 | grad_norm 18.43 | clip 1
+INFO: Epoch 027: valid_loss 3.81 | num_tokens 14.2 | batch_size 500 | valid_perplexity 45.2
+INFO: Epoch 028: loss 3.302 | lr 0.0005 | num_tokens 14.27 | batch_size 8 | grad_norm 18.6 | clip 1
+INFO: Epoch 028: valid_loss 3.79 | num_tokens 14.2 | batch_size 500 | valid_perplexity 44.2
+INFO: Epoch 029: loss 3.277 | lr 0.0005 | num_tokens 14.27 | batch_size 8 | grad_norm 18.68 | clip 1
+INFO: Epoch 029: valid_loss 3.77 | num_tokens 14.2 | batch_size 500 | valid_perplexity 43.5
+INFO: Epoch 030: loss 3.254 | lr 0.0005 | num_tokens 14.27 | batch_size 8 | grad_norm 18.71 | clip 1
+INFO: Epoch 030: valid_loss 3.77 | num_tokens 14.2 | batch_size 500 | valid_perplexity 43.4
+INFO: Epoch 031: loss 3.234 | lr 0.0005 | num_tokens 14.27 | batch_size 8 | grad_norm 18.84 | clip 1
+INFO: Epoch 031: valid_loss 3.76 | num_tokens 14.2 | batch_size 500 | valid_perplexity 43
+INFO: Epoch 032: loss 3.213 | lr 0.0005 | num_tokens 14.27 | batch_size 8 | grad_norm 18.94 | clip 1
+INFO: Epoch 032: valid_loss 3.77 | num_tokens 14.2 | batch_size 500 | valid_perplexity 43.5
+INFO: Epoch 033: loss 3.196 | lr 0.0005 | num_tokens 14.27 | batch_size 8 | grad_norm 19.03 | clip 1
+INFO: Epoch 033: valid_loss 3.75 | num_tokens 14.2 | batch_size 500 | valid_perplexity 42.6
+INFO: Epoch 034: loss 3.173 | lr 0.0005 | num_tokens 14.27 | batch_size 8 | grad_norm 19.09 | clip 1
+INFO: Epoch 034: valid_loss 3.75 | num_tokens 14.2 | batch_size 500 | valid_perplexity 42.4
+INFO: Epoch 035: loss 3.152 | lr 0.0005 | num_tokens 14.27 | batch_size 8 | grad_norm 19.28 | clip 1
+INFO: Epoch 035: valid_loss 3.74 | num_tokens 14.2 | batch_size 500 | valid_perplexity 41.9
+INFO: Epoch 036: loss 3.13 | lr 0.0005 | num_tokens 14.27 | batch_size 8 | grad_norm 19.38 | clip 1
+INFO: Epoch 036: valid_loss 3.73 | num_tokens 14.2 | batch_size 500 | valid_perplexity 41.5
+INFO: Epoch 037: loss 3.116 | lr 0.0005 | num_tokens 14.27 | batch_size 8 | grad_norm 19.46 | clip 1
+INFO: Epoch 037: valid_loss 3.72 | num_tokens 14.2 | batch_size 500 | valid_perplexity 41.4
+INFO: Epoch 038: loss 3.097 | lr 0.0005 | num_tokens 14.27 | batch_size 8 | grad_norm 19.58 | clip 1
+INFO: Epoch 038: valid_loss 3.73 | num_tokens 14.2 | batch_size 500 | valid_perplexity 41.5
+INFO: Epoch 039: loss 3.078 | lr 0.0005 | num_tokens 14.27 | batch_size 8 | grad_norm 19.7 | clip 1
+INFO: Epoch 039: valid_loss 3.72 | num_tokens 14.2 | batch_size 500 | valid_perplexity 41.2
+INFO: Epoch 040: loss 3.062 | lr 0.0005 | num_tokens 14.27 | batch_size 8 | grad_norm 19.77 | clip 1
+INFO: Epoch 040: valid_loss 3.73 | num_tokens 14.2 | batch_size 500 | valid_perplexity 41.9
+INFO: Epoch 041: loss 3.047 | lr 0.0005 | num_tokens 14.27 | batch_size 8 | grad_norm 19.72 | clip 1
+INFO: Epoch 041: valid_loss 3.71 | num_tokens 14.2 | batch_size 500 | valid_perplexity 41
+INFO: Epoch 042: loss 3.027 | lr 0.0005 | num_tokens 14.27 | batch_size 8 | grad_norm 19.91 | clip 1
+INFO: Epoch 042: valid_loss 3.7 | num_tokens 14.2 | batch_size 500 | valid_perplexity 40.4
+INFO: Epoch 043: loss 3.01 | lr 0.0005 | num_tokens 14.27 | batch_size 8 | grad_norm 19.92 | clip 1
+INFO: Epoch 043: valid_loss 3.7 | num_tokens 14.2 | batch_size 500 | valid_perplexity 40.4
+INFO: Epoch 044: loss 2.997 | lr 0.0005 | num_tokens 14.27 | batch_size 8 | grad_norm 20.02 | clip 1
+INFO: Epoch 044: valid_loss 3.69 | num_tokens 14.2 | batch_size 500 | valid_perplexity 40.2
+INFO: Epoch 045: loss 2.982 | lr 0.0005 | num_tokens 14.27 | batch_size 8 | grad_norm 20.15 | clip 1
+INFO: Epoch 045: valid_loss 3.7 | num_tokens 14.2 | batch_size 500 | valid_perplexity 40.3
+INFO: Epoch 046: loss 2.967 | lr 0.0005 | num_tokens 14.27 | batch_size 8 | grad_norm 20.14 | clip 1
+INFO: Epoch 046: valid_loss 3.7 | num_tokens 14.2 | batch_size 500 | valid_perplexity 40.4
+INFO: Epoch 047: loss 2.958 | lr 0.0005 | num_tokens 14.27 | batch_size 8 | grad_norm 20.24 | clip 1
+INFO: Epoch 047: valid_loss 3.7 | num_tokens 14.2 | batch_size 500 | valid_perplexity 40.4
+INFO: No validation set improvements observed for 3 epochs. Early stop!
+train done!
+[2023-11-03 00:41:48] COMMAND: translate.py --data /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.1/prepared/ --dicts /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.1/prepared/ --checkpoint-path /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.1/checkpoint_last.pt --output /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.1/translated.en.txt
+[2023-11-03 00:41:48] Arguments: {'cuda': False, 'data': '/cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.1/prepared/', 'source_lang': 'fr', 'target_lang': 'en', 'max_tokens': None, 'batch_size': 1, 'train_on_tiny': False, 'arch': 'lstm', 'max_epoch': 10000, 'clip_norm': 4.0, 'lr': 0.0005, 'patience': 3, 'log_file': None, 'save_dir': '/cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.1', 'restore_file': 'checkpoint_last.pt', 'save_interval': 1, 'no_save': False, 'epoch_checkpoints': False, 'encoder_num_layers': 2, 'decoder_num_layers': 2, 'encoder_dropout_in': 0.3, 'encoder_dropout_out': 0.3, 'decoder_dropout_in': 0.3, 'decoder_dropout_out': 0.3, 'encoder_embed_dim': 64, 'encoder_embed_path': None, 'encoder_hidden_size': 64, 'encoder_bidirectional': 'True', 'decoder_embed_dim': 64, 'decoder_embed_path': None, 'decoder_hidden_size': 128, 'decoder_use_attention': 'True', 'decoder_use_lexical_model': 'False', 'device_id': 0, 'seed': 42, 'dicts': '/cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.1/prepared/', 'checkpoint_path': '/cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.1/checkpoint_last.pt', 'output': '/cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.1/translated.en.txt', 'max_len': 128}
+[2023-11-03 00:41:48] Loaded a source dictionary (fr) with 4000 words
+[2023-11-03 00:41:48] Loaded a target dictionary (en) with 4000 words
+[2023-11-03 00:41:48] Loaded a model from checkpoint /cluster/home/nanlin/atmt_2023/assignments/03/BPE/../../../data/en-fr/bpe/dropout_0.1/checkpoint_last.pt
+translate done!
+dropout 0.1
+{
+ "name": "BLEU",
+ "score": 4.0,
+ "signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.3.1",
+ "verbose_score": "28.5/6.6/2.1/0.7 (BP = 1.000 ratio = 1.439 hyp_len = 5600 ref_len = 3892)",
+ "nrefs": "1",
+ "case": "mixed",
+ "eff": "no",
+ "tok": "13a",
+ "smooth": "exp",
+ "version": "2.3.1"
+}

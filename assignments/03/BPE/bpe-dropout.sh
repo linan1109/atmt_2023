@@ -11,8 +11,11 @@ tgt=en
 # change into base directory to ensure paths are valid
 cd $base
 
-for dropout in 0.0 0.05 0.1 0.15 0.2
+for dropout in 0.0 0.025 0.05 0.075 0.1
 do
+    echo "---------------------------------------------"
+    echo "dropout $dropout"
+
     data=$base/data/$tgt-$src/bpe/dropout_$dropout
 
     # create preprocessed directory
@@ -62,12 +65,20 @@ do
         --data $data/prepared/ \
         --source-lang $src \
         --target-lang $tgt \
-        --save-dir $data
+        --save-dir $data \
+        --lr 0.0005 \
+        --batch-size 8 \
+        --encoder-num-layers 2 \
+        --decoder-num-layers 2 \
+        --encoder-dropout-in 0.3 \
+        --encoder-dropout-out 0.3 \
+        --decoder-dropout-in 0.3 \
+        --decoder-dropout-out 0.3
+        
 
     echo "train done!"
 
     python translate.py \
-        --cuda \
         --data $data/prepared/ \
         --dicts $data/prepared/ \
         --checkpoint-path $data/checkpoint_last.pt \
@@ -77,7 +88,7 @@ do
     sed -i 's/Ġ//g' $data/translated.$tgt.txt
 
     echo "translate done!"
-
+    echo "dropout $dropout"
     bash scripts/postprocess.sh \
         $data/translated.$tgt.txt \
         $data/translated.$tgt.p.txt en
