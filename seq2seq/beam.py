@@ -53,6 +53,27 @@ class BeamSearch(object):
         node = (node[0], node[2])
 
         return node
+    
+    def get_n_best(self, n):
+        """ Returns n best final nodes"""
+        # Merge EOS paths and those that were stopped by
+        # max sequence length (still in nodes)
+        merged = PriorityQueue()
+        for _ in range(self.final.qsize()):
+            node = self.final.get()
+            merged.put(node)
+
+        for _ in range(self.nodes.qsize()):
+            node = self.nodes.get()
+            merged.put(node)
+
+        nodes = []
+        for _ in range(n):
+            node = merged.get()
+            node = node[2]
+            nodes.append(node)
+
+        return nodes
 
     def prune(self):
         """ Removes all nodes but the beam_size best ones (lowest neg log prob) """
@@ -67,7 +88,7 @@ class BeamSearch(object):
 
 class BeamSearchNode(object):
     """ Defines a search node and stores values important for computation of beam search path"""
-    def __init__(self, search, emb, lstm_out, final_hidden, final_cell, mask, sequence, logProb, length, regularizer=None):
+    def __init__(self, search, emb, lstm_out, final_hidden, final_cell, mask, sequence, logProb, length, regularizer=0.0, diversity_penalty=0.0):
 
         # Attributes needed for computation of decoder states
         self.sequence = sequence
@@ -84,6 +105,7 @@ class BeamSearchNode(object):
         self.search = search
         
         self.regularizer = regularizer
+        self.diversity_penalty = diversity_penalty
 
     def eval(self, alpha=0.0):
         """ Returns score of sequence up to this node 
@@ -96,7 +118,5 @@ class BeamSearchNode(object):
         
         """
         normalizer = (5 + self.length)**alpha / (5 + 1)**alpha
-        if self.regularizer is not None:
-            return (self.logp - self.regularizer) / normalizer
-        return self.logp / normalizer
+        return (self.logp - self.regularizer - self.diversity_penalty)  / normalizer
         
