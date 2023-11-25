@@ -119,7 +119,7 @@ def main(args):
                     mask = None
 
                 node = BeamSearchNode(searches[i], emb, lstm_out, final_hidden, final_cell,
-                                      mask, torch.cat((go_slice[i], next_word)), log_p, 1, log_p**2)
+                                      mask, torch.cat((go_slice[i], next_word)), log_p, 1, args.lambd*(log_p**2))
                 # __QUESTION 3: Why do we add the node with a negative score?
                 searches[i].add(-node.eval(args.alpha), node)
 
@@ -149,13 +149,14 @@ def main(args):
                 decoder_out, _ = model.decoder(prev_words, encoder_out)
 
 
-            R = [node.sum_squared_logp for node in nodes]
-            R = np.array(R).reshape(-1, 1, 1)
+            # R = [node.sum_squared_logp for node in nodes]
+            # R = np.array(R).reshape(-1, 1, 1)
             
             log_softmax = torch.log(torch.softmax(decoder_out, dim=2))
             # see __QUESTION 2
-            log_probs, next_candidates = torch.topk(log_softmax - args.lambd * R,
-                                                    args.beam_size+1, dim=-1)
+            # log_probs, next_candidates = torch.topk(log_softmax - R, args.beam_size+1, dim=-1)
+            log_probs, next_candidates = torch.topk(log_softmax, args.beam_size+1, dim=-1)
+            # log_probs = log_probs + R
 
             # Create number of beam_size next nodes for every current node
             for i in range(log_probs.shape[0]):
@@ -169,7 +170,7 @@ def main(args):
                     log_p = torch.where(best_candidate == tgt_dict.unk_idx, backoff_log_p, best_log_p)
                     log_p = log_p[-1]
                     next_word = torch.cat((prev_words[i][1:], next_word[-1:]))
-
+                    
                     # Get parent node and beam search object for corresponding sentence
                     node = nodes[i]
                     search = node.search
@@ -191,7 +192,7 @@ def main(args):
                         node = BeamSearchNode(
                             search, node.emb, node.lstm_out, node.final_hidden,
                             node.final_cell, node.mask, torch.cat((prev_words[i][0].view([1]),
-                            next_word)), node.logp + log_p, node.length + 1, node.sum_squared_logp + log_p**2
+                            next_word)), node.logp + log_p, node.length + 1, node.sum_squared_logp + args.lambd*(log_p**2)
                             )
                         search.add(-node.eval(args.alpha), node)
 
